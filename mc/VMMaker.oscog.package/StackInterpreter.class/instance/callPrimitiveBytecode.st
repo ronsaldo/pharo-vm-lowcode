@@ -33,6 +33,19 @@ callPrimitiveBytecode
 			 prim < 4000 ifTrue:
 				[^self trinaryInlinePrimitive: prim - 3000].
 
+			 prim < 30000 ifTrue: [localIP := localIP - 3.
+			 	^self respondToUnknownBytecode
+			 ].
+
+			 prim < 31000 ifTrue:
+				[^self negativeTrinaryInlinePrimitive: prim - 30000].
+			
+			 prim < 32000 ifTrue:
+				[^self negativeBinaryInlinePrimitive: prim - 31000].
+
+			 prim < 33000 ifTrue:
+				[^self negativeUnaryInlinePrimitive: prim - 32000].
+			
 			 localIP := localIP - 3.
 			 ^self respondToUnknownBytecode]
 		ifFalse:

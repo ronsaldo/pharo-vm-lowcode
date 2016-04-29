@@ -17,7 +17,11 @@ computeKernelReturnTypes
 						unalignedLong32At: #sqInt unalignedLong32At:put: #sqInt
 
 		 long64At: #sqLong long64At:put: #sqLong
-		
+		 long64AtPointer: #sqLong long64AtPointer:put: #sqLong
+	
+		singleFloatAtPointer: #float singleFloatAtPointerPut: #float		
+		floatAtPointer: #double floatAtPointerPut: #double
+
 		 fetchFloatAt:into: #void storeFloatAt:from: #void
 			fetchFloatAtPointer:into: #void storeFloatAtPointer:from: #void
 		 fetchSingleFloatAt:into: #void storeSingleFloatAt:from: #void

@@ -129,7 +129,11 @@
 		"statCheckForEvents",
 		"statProcessSwitch",
 		"statIOProcessEvents",
-		"statPendingFinalizationSignals" ],
+		"statPendingFinalizationSignals",
+		"nativeSP",
+		"nativeStackPointer",
+		"lowcodeCalloutState",
+		"shadowCallStackPointer" ],
 	"name" : "StackInterpreter",
 	"pools" : [
 		"VMBasicConstants",

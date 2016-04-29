@@ -5,6 +5,12 @@ commonCallerReturn
 	| callersFPOrNull |
 	<var: #callersFPOrNull type: #'char *'>
 
+	"TODO: Store/restore the nativeSP more properly, when it exists"
+	nativeSP ~= 0 ifTrue: [
+		nativeStackPointer := (self nativePreviousStackPointerIn: localFP) - 1.
+		nativeSP := 0.
+	].
+
 	callersFPOrNull := self frameCallerFP: localFP.
 	callersFPOrNull == 0 "baseFrame" ifTrue:
 		[self assert: localFP = stackPage baseFP.

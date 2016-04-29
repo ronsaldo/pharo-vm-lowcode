@@ -9,6 +9,7 @@ declareCVarsIn: aCCodeGenerator
 		addHeaderFile:'<wchar.h> /* for wint_t */';
 		addHeaderFile:'"vmCallback.h"';
 		addHeaderFile:'"sqMemoryFence.h"';
+		addHeaderFile:'"sqLowcodeFFI.h"';
 		addHeaderFile:'"dispdbg.h"'.
 	vmClass declareInterpreterVersionIn: aCCodeGenerator defaultName: 'Stack'.
 	aCCodeGenerator
@@ -21,7 +22,7 @@ declareCVarsIn: aCCodeGenerator
 		as: #usqInt
 		in: aCCodeGenerator.
 	"These are all pointers; char * because Slang has no support for C pointer arithmetic."
-	self declareC: #(localIP localSP localFP stackPointer framePointer stackLimit breakSelector)
+	self declareC: #(localIP localSP localFP nativeSP stackPointer framePointer stackLimit breakSelector nativeStackPointer nativeFramePointer shadowCallStack)
 		as: #'char *'
 		in: aCCodeGenerator.
 	aCCodeGenerator
@@ -98,4 +99,6 @@ declareCVarsIn: aCCodeGenerator
 								statProcessSwitch statIOProcessEvents statForceInterruptCheck
 								statCheckForEvents statStackOverflow statStackPageDivorce)
 		in: aCCodeGenerator.
-	aCCodeGenerator var: #nextProfileTick type: #sqLong
+	aCCodeGenerator var: #nextProfileTick type: #sqLong.
+	
+	aCCodeGenerator var: #lowcodeCalloutState type: #'sqLowcodeCalloutState*'
