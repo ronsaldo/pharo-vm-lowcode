@@ -193,7 +193,9 @@
 		"maxCPICCases",
 		"debugBytecodePointers",
 		"debugOpcodeIndices",
-		"disassemblingMethod" ],
+		"disassemblingMethod",
+		"ceMallocTrampoline",
+		"ceFreeTrampoline" ],
 	"name" : "Cogit",
 	"pools" : [
 		"CogAbstractRegisters",

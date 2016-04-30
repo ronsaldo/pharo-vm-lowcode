@@ -8,7 +8,7 @@ scanMethod
 	 Answer the block count or on error a negative error code"
 	| latestContinuation nExts descriptor pc numBlocks distance targetPC framelessStackDelta |
 	<var: #descriptor type: #'BytecodeDescriptor *'>
-	needsFrame := false.
+	needsFrame := (coInterpreter methodNeedsLargeContext: methodObj).
 	inBlock := false.
 	prevBCDescriptor := nil.
 	NewspeakVM ifTrue:

@@ -4,5 +4,9 @@
 	"instance" : {
 		"asUnsignedInteger" : "eem 12/11/2010 15:50",
 		"printStateOn:" : "eem 12/1/2010 10:52",
+		"simNativeStackPtr" : "RonieSalgado 4/29/2016 16:36",
+		"simNativeStackPtr:" : "RonieSalgado 4/29/2016 16:36",
+		"simNativeStackSize" : "RonieSalgado 4/29/2016 16:37",
+		"simNativeStackSize:" : "RonieSalgado 4/29/2016 16:37",
 		"simStackPtr" : "eem 11/22/2010 14:31",
 		"simStackPtr:" : "eem 11/22/2010 14:31" } }

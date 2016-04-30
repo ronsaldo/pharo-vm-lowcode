@@ -1,4 +1,4 @@
 translation
 ancilliaryClasses: options
 	^(super ancilliaryClasses: options),
-	  { CogSSBytecodeFixup. CogSimStackEntry. CogSSOptStatus }
+	  { CogSSBytecodeFixup. CogSimStackEntry. CogSimStackNativeEntry . CogSSOptStatus }

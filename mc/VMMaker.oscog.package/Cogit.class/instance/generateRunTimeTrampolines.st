@@ -28,4 +28,11 @@ generateRunTimeTrampolines
 	ceReturnToInterpreterTrampoline := self
 											genReturnTrampolineFor: #ceReturnToInterpreter:
 											called: 'ceReturnToInterpreterTrampoline'
+											arg: ReceiverResultReg.
+	ceMallocTrampoline := self genTrampolineFor: #ceMalloc:
+											called: 'ceMallocTrampoline'
+											arg: ReceiverResultReg
+											result: TempReg.
+	ceFreeTrampoline := self genTrampolineFor: #ceFree:
+											called: 'ceFreeTrampoline'
 											arg: ReceiverResultReg

@@ -18,6 +18,7 @@ generatorTableFrom: anArray
 						isBranchTrue: (tuple includes: #isBranchTrue);
 						isBranchFalse: (tuple includes: #isBranchFalse);
 						isExtension: (tuple includes: #extension);
+						isCallPrimitive: (tuple includes: #callPrimitive);
 						isInstVarRef: (tuple includes: #isInstVarRef);	"for Spur"
 						hasIRC: (tuple includes: #hasIRC);			"for Newspeak"
 						yourself.

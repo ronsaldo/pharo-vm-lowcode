@@ -1,0 +1,10 @@
+internal interpreter access
+nativePreviousStackPointerIn: theFP
+	"See StackInterpreter class>>initializeFrameIndices"
+	<returnTypeC: #'char*'>
+	<var: #theFP type: #'char *'>
+	^(self isMachineCodeFrame: theFP)
+		ifTrue:
+			[stackPages pointerAtPointer: theFP + FoxMFReceiver - BytesPerWord]
+		ifFalse:
+			[stackPages pointerAtPointer: theFP + FoxIFReceiver - BytesPerWord]
