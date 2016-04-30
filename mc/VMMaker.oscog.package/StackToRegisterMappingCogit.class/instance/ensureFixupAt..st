@@ -15,11 +15,17 @@ ensureFixupAt: targetIndex
 	fixup targetInstruction asUnsignedInteger <= 1
 		ifTrue: "convert a non-merge into a merge"
 			[fixup targetInstruction: (self cCoerceSimple: 2 to: #'AbstractInstruction *').
-			 fixup simStackPtr: simStackPtr]
+			 fixup simStackPtr: simStackPtr.
+			 fixup simNativeStackPtr: simNativeStackPtr.
+			 fixup simNativeStackSize: simNativeStackSize.]
 		ifFalse:
 			[fixup simStackPtr <= -2
 				ifTrue: ["this is the target of a backward branch and
 						 so doesn't have a simStackPtr assigned yet."
-						fixup simStackPtr: simStackPtr]
-				ifFalse: [self assert: fixup simStackPtr = simStackPtr]].
+						fixup simStackPtr: simStackPtr.
+		  				fixup simNativeStackPtr: simNativeStackPtr.
+			 			fixup simNativeStackSize: simNativeStackSize.]
+				ifFalse: [self assert: fixup simStackPtr = simStackPtr.
+							 self assert: fixup simNativeStackPtr = simNativeStackPtr.
+		 			 		 self assert: fixup simNativeStackSize = simNativeStackSize.]].
 	^fixup

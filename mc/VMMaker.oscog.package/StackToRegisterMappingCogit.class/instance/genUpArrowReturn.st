@@ -19,7 +19,10 @@ genUpArrowReturn
 		 ^0].
 	needsFrame
 		ifTrue:
-			[self MoveR: FPReg R: SPReg.
+			[hasNativeFrame ifTrue: [
+				self leaveNativeFrame.
+		 ].
+		 	 self MoveR: FPReg R: SPReg.
 			 self PopR: FPReg.
 			 backEnd hasLinkRegister ifTrue:
 				[self PopR: LinkReg].

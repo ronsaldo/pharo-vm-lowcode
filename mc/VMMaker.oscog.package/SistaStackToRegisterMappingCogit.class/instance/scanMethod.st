@@ -10,6 +10,7 @@ scanMethod
 	| latestContinuation nExts descriptor pc numBlocks distance targetPC framelessStackDelta |
 	<var: #descriptor type: #'BytecodeDescriptor *'>
 	needsFrame := (coInterpreter methodNeedsLargeContext: methodObj).
+	hasNativeFrame := false.
 	inBlock := false.
 	prevBCDescriptor := nil.
 	numCounters := 0.

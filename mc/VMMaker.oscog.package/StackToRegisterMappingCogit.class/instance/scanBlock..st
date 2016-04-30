@@ -5,6 +5,7 @@ scanBlock: blockStart
 	<var: #blockStart type: #'BlockStart *'>
 	<var: #descriptor type: #'BytecodeDescriptor *'>
 	needsFrame := false.
+	hasNativeFrame := false.
 	prevBCDescriptor := nil.
 	methodOrBlockNumArgs := blockStart numArgs.
 	inBlock := true.

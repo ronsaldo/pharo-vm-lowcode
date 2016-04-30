@@ -10,5 +10,7 @@ initializeFixupAt: targetIndex
 	fixup := self fixupAt: targetIndex.
 	fixup
 		targetInstruction: (self cCoerceSimple: 2 to: #'AbstractInstruction *');
-		simStackPtr: -2.
+		simStackPtr: -2;
+		simNativeStackPtr: -2;
+		simNativeStackSize: 0.
 	^fixup

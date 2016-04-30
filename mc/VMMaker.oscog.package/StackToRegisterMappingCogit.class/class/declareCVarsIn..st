@@ -25,6 +25,8 @@ declareCVarsIn: aCodeGen
 			declareC: 'CogSimStackEntry simStack[', ((CoInterpreter bindingOf: #LargeContextSlots) value * 5 // 4) asString, ']';
 		var: 'simSelf'
 			type: #CogSimStackEntry;
+		var: 'simNativeStack'
+			declareC: 'CogSimStackNativeEntry simNativeStack[', ((CoInterpreter bindingOf: #LargeContextSlots) value * 5 / 4 // BytesPerWord) asString, ']';
 		var: #optStatus
 			type: #CogSSOptStatus;
 		var: 'prevBCDescriptor'

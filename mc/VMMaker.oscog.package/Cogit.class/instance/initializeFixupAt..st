@@ -6,5 +6,8 @@ initializeFixupAt: targetIndex
 	| fixup |
 	<var: #fixup type: #'BytecodeFixup *'>
 	fixup := self fixupAt: targetIndex.
-	fixup targetInstruction: (self cCoerceSimple: 1 to: #'AbstractInstruction *').
+	fixup targetInstruction: (self cCoerceSimple: 1 to: #'AbstractInstruction *');
+		simStackPtr: -2;
+		simNativeStackPtr: -2;
+		simNativeStackSize: 0.
 	^fixup

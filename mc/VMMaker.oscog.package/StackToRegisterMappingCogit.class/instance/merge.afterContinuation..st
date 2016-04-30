@@ -10,19 +10,26 @@ merge: fixup afterContinuation: mergeWithContinuation
 	 current simStackPtr is irrelevant and we continue with that of the fixup."
 	mergeWithContinuation ifFalse:
 		[self assert: fixup targetInstruction asUnsignedInteger >= 2.  "Must have a valid simStackPtr"
-		 simStackPtr := fixup simStackPtr].
+		 simStackPtr := fixup simStackPtr.
+		 simNativeStackPtr := fixup simNativeStackPtr.
+		 simNativeStackSize := fixup simNativeStackSize.].
 	fixup targetInstruction asUnsignedInteger <= 2 ifTrue:
 		["This is either a forward or backward branch target.
 		  The stack must be flushed."
 		 self ssFlushTo: simStackPtr.
 		 fixup simStackPtr <= -2 ifTrue:
 			"This is the target of a backward branch.  It doesn't have a simStackPtr yet."
-			[fixup simStackPtr: simStackPtr].
+			[fixup simStackPtr: simStackPtr.
+			 fixup simNativeStackPtr: simNativeStackPtr.
+			 fixup simNativeStackSize: simNativeStackSize.].
 		 fixup targetInstruction: self Label].
 	self assert: simStackPtr >= fixup simStackPtr.
+	self assert: simNativeStackPtr >= fixup simNativeStackPtr.
+	self assert: simNativeStackSize >= fixup simNativeStackSize.
 	self cCode: '' inSmalltalk:
 		[self assert: fixup simStackPtr = (self debugStackPointerFor: bytecodePC)].
 	simStackPtr := fixup simStackPtr.
+	simNativeStackPtr := fixup simNativeStackPtr.
 	simSpillBase := methodOrBlockNumTemps.
 	"For now throw away all type information for values on the stack, but sometime consider
 	 the more sophisticated merge described in the class side stackToRegisterMapping."
