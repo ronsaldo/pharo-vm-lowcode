@@ -6,7 +6,7 @@ lowcodePrimitiveMoveInt64ToPhysical
 	registerID := extA.
 	value := self internalPopStackInt64.
 
-            self lowcodeCalloutState: lowcodeCalloutState int64Register: registerID value: value.
-        
+	self lowcodeCalloutState: lowcodeCalloutState int64Register: registerID value: value.
+
 	extA := 0.
 

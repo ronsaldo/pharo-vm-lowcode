@@ -4,7 +4,7 @@ lowcodePrimitivePushOne32
 	| result |
 	<var: #result type: #'sqInt' >
 
-            result := 1.
-        
-	 self internalPushInt32: result.
+	result := 1.
+
+	self internalPushInt32: result.
 

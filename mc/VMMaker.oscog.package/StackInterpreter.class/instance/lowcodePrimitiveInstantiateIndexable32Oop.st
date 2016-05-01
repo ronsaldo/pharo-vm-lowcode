@@ -8,7 +8,7 @@ lowcodePrimitiveInstantiateIndexable32Oop
 	indexableSize := self internalPopStackInt32.
 	classOop := self internalPopStack.
 
-            object := objectMemory instantiateClass: classOop indexableSize: indexableSize.
-        
-	 self internalPush: object.
+	object := objectMemory instantiateClass: classOop indexableSize: indexableSize.
+
+	self internalPush: object.
 

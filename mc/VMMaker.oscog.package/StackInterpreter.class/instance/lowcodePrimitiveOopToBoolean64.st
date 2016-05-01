@@ -6,7 +6,7 @@ lowcodePrimitiveOopToBoolean64
 	<var: #value type: #'sqLong' >
 	object := self internalPopStack.
 
-            value := self booleanValueOf: object.
-        
-	 self internalPushInt64: value.
+	value := self booleanValueOf: object.
+
+	self internalPushInt64: value.
 

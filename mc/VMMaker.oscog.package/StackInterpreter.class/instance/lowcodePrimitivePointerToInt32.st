@@ -6,7 +6,7 @@ lowcodePrimitivePointerToInt32
 	<var: #result type: #'sqInt' >
 	pointer := self internalPopStackPointer.
 
-            result := self cCoerce: pointer to: 'uintptr_t'.
-        
-	 self internalPushInt32: result.
+	result := self cCoerce: pointer to: 'uintptr_t'.
+
+	self internalPushInt32: result.
 

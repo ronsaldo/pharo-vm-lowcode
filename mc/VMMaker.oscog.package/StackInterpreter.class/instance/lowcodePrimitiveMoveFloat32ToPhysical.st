@@ -6,7 +6,7 @@ lowcodePrimitiveMoveFloat32ToPhysical
 	registerID := extA.
 	value := self internalPopStackFloat32.
 
-            self lowcodeCalloutState: lowcodeCalloutState float32Register: registerID value: value.
-        
+	self lowcodeCalloutState: lowcodeCalloutState float32Register: registerID value: value.
+
 	extA := 0.
 

@@ -12,7 +12,7 @@ lowcodePrimitiveEffectiveAddress64
 	index := self internalPopStackInt64.
 	base := self internalPopStackPointer.
 
-            result := base + (index*scale) + offset.
-        
-	 self internalPushPointer: result.
+	result := base + (index*scale) + offset.
+
+	self internalPushPointer: result.
 

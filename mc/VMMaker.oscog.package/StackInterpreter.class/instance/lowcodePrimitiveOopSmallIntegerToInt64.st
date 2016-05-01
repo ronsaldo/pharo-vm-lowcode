@@ -6,7 +6,7 @@ lowcodePrimitiveOopSmallIntegerToInt64
 	<var: #value type: #'sqLong' >
 	object := self internalPopStack.
 
-            value := objectMemory integerValueOf: object.
-        
-	 self internalPushInt64: value.
+	value := objectMemory integerValueOf: object.
+
+	self internalPushInt64: value.
 

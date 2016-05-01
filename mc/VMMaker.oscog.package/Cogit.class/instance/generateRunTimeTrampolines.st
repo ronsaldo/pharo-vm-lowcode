@@ -35,4 +35,5 @@ generateRunTimeTrampolines
 											result: TempReg.
 	ceFreeTrampoline := self genTrampolineFor: #ceFree:
 											called: 'ceFreeTrampoline'
-											arg: ReceiverResultReg
+											arg: ReceiverResultReg.
+	ceFFICalloutTrampoline := self genFFICalloutTrampoline.

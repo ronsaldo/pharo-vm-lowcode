@@ -8,7 +8,7 @@ lowcodePrimitiveFloat64Great
 	second := self internalPopStackFloat64.
 	first := self internalPopStackFloat64.
 
-            value := first > second ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := first > second ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

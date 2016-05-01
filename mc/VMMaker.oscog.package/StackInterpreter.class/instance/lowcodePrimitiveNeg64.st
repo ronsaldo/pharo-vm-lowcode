@@ -6,7 +6,7 @@ lowcodePrimitiveNeg64
 	<var: #result type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            result := value negated.
-        
-	 self internalPushInt64: result.
+	result := value negated.
+
+	self internalPushInt64: result.
 

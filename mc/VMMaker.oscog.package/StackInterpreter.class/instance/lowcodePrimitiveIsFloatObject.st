@@ -6,7 +6,7 @@ lowcodePrimitiveIsFloatObject
 	<var: #value type: #'sqInt' >
 	object := self internalPopStack.
 
-            value := (objectMemory isFloatObject: object) ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := (objectMemory isFloatObject: object) ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

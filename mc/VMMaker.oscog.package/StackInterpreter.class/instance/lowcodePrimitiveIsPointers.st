@@ -6,7 +6,7 @@ lowcodePrimitiveIsPointers
 	<var: #value type: #'sqInt' >
 	object := self internalPopStack.
 
-            value := (objectMemory isPointers: object) ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := (objectMemory isPointers: object) ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

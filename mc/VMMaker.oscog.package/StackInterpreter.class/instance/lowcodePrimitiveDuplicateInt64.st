@@ -7,9 +7,9 @@ lowcodePrimitiveDuplicateInt64
 	<var: #dup2 type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            dup1 := value.
-            dup2 := value.
-        
-	 self internalPushInt64: dup1.
-	 self internalPushInt64: dup2.
+	dup1 := value.
+	dup2 := value.
+
+	self internalPushInt64: dup1.
+	self internalPushInt64: dup2.
 

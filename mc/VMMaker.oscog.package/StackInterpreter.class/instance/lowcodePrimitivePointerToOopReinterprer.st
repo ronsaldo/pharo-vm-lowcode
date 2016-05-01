@@ -6,7 +6,7 @@ lowcodePrimitivePointerToOopReinterprer
 	<var: #object type: #'sqInt' >
 	pointer := self internalPopStackPointer.
 
-            object := self cCoerce: pointer to: 'sqInt'.
-        
-	 self internalPush: object.
+	object := self cCoerce: pointer to: 'sqInt'.
+
+	self internalPush: object.
 

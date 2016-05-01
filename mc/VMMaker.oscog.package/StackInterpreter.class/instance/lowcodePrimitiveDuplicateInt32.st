@@ -7,9 +7,9 @@ lowcodePrimitiveDuplicateInt32
 	<var: #dup2 type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            dup1 := value.
-            dup2 := value.
-        
-	 self internalPushInt32: dup1.
-	 self internalPushInt32: dup2.
+	dup1 := value.
+	dup2 := value.
+
+	self internalPushInt32: dup1.
+	self internalPushInt32: dup2.
 

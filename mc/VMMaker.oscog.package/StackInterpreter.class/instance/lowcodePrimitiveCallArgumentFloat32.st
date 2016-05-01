@@ -5,6 +5,6 @@ lowcodePrimitiveCallArgumentFloat32
 	<var: #argumentValue type: #'float' >
 	argumentValue := self internalPopStackFloat32.
 
-            self internalPushShadowCallStackFloat32: argumentValue.
-        
+	self internalPushShadowCallStackFloat32: argumentValue.
+
 

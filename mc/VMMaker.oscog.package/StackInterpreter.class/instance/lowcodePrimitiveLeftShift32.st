@@ -8,7 +8,7 @@ lowcodePrimitiveLeftShift32
 	shiftAmount := self internalPopStackInt32.
 	value := self internalPopStackInt32.
 
-            result := value << shiftAmount.
-        
-	 self internalPushInt32: result.
+	result := value << shiftAmount.
+
+	self internalPushInt32: result.
 

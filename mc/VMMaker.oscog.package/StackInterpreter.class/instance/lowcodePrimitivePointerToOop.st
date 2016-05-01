@@ -7,9 +7,9 @@ lowcodePrimitivePointerToOop
 	pointerClassLiteral := self literal: extA.
 	pointer := self internalPopStackPointer.
 
-            object := objectMemory instantiateClass: pointerClassLiteral indexableSize: BytesPerWord.
-            self pointerAtPointer: (objectMemory firstIndexableField: object) put: pointer.
-        
-	 self internalPush: object.
+	object := objectMemory instantiateClass: pointerClassLiteral indexableSize: BytesPerWord.
+	self pointerAtPointer: (objectMemory firstIndexableField: object) put: pointer.
+
+	self internalPush: object.
 	extA := 0.
 

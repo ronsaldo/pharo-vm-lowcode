@@ -5,8 +5,8 @@ lowcodePrimitiveLoadLocalInt8
 	<var: #value type: #'sqInt' >
 	baseOffset := extA.
 
-            value := stackPages int8AtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP).
-        
-	 self internalPushInt32: value.
+	value := stackPages int8AtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP).
+
+	self internalPushInt32: value.
 	extA := 0.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveOopToPointer
 	<var: #pointer type: #'char*' >
 	object := self internalPopStack.
 
-            pointer := self pointerAtPointer: (objectMemory firstIndexableField: object).
-        
-	 self internalPushPointer: pointer.
+	pointer := self pointerAtPointer: (objectMemory firstIndexableField: object).
+
+	self internalPushPointer: pointer.
 

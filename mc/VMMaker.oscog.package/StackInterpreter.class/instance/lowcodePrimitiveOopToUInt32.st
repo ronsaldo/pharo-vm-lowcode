@@ -6,7 +6,7 @@ lowcodePrimitiveOopToUInt32
 	<var: #value type: #'sqInt' >
 	object := self internalPopStack.
 
-            value := self positive32BitValueOf: object.
-        
-	 self internalPushInt32: value.
+	value := self positive32BitValueOf: object.
+
+	self internalPushInt32: value.
 

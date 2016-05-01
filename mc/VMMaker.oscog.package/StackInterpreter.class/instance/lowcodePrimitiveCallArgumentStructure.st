@@ -6,7 +6,7 @@ lowcodePrimitiveCallArgumentStructure
 	structureSize := extA.
 	structurePointer := self internalPopStackPointer.
 
-            self internalPushShadowCallStackStructure: structurePointer size: structureSize.
-        
+	self internalPushShadowCallStackStructure: structurePointer size: structureSize.
+
 	extA := 0.
 

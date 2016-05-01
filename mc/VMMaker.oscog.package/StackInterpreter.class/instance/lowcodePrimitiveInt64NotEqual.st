@@ -8,7 +8,7 @@ lowcodePrimitiveInt64NotEqual
 	second := self internalPopStackInt64.
 	first := self internalPopStackInt64.
 
-            value := first ~= second ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := first ~= second ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

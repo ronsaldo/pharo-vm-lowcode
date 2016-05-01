@@ -7,6 +7,6 @@ lowcodePrimitiveStoreInt64ToMemory
 	value := self internalPopStackInt64.
 	pointer := self internalPopStackPointer.
 
-            self int64AtPointer: pointer put: value.
-        
+	self int64AtPointer: pointer put: value.
+
 

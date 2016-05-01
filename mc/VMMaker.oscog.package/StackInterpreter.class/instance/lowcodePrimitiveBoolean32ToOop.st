@@ -6,7 +6,7 @@ lowcodePrimitiveBoolean32ToOop
 	<var: #value type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            object := value ~= 0 ifTrue: [ objectMemory trueObject ] ifFalse: [objectMemory falseObject].
-        
-	 self internalPush: object.
+	object := value ~= 0 ifTrue: [ objectMemory trueObject ] ifFalse: [objectMemory falseObject].
+
+	self internalPush: object.
 

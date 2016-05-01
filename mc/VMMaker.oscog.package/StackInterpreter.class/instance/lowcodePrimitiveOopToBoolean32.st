@@ -6,7 +6,7 @@ lowcodePrimitiveOopToBoolean32
 	<var: #value type: #'sqInt' >
 	object := self internalPopStack.
 
-            value := self booleanValueOf: object.
-        
-	 self internalPushInt32: value.
+	value := self booleanValueOf: object.
+
+	self internalPushInt32: value.
 

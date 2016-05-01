@@ -5,8 +5,8 @@ lowcodePrimitivePushPhysicalInt64
 	<var: #value type: #'sqLong' >
 	registerID := extA.
 
-            value := self lowcodeCalloutState: lowcodeCalloutState int64Register: registerID.
-        
-	 self internalPushInt64: value.
+	value := self lowcodeCalloutState: lowcodeCalloutState int64Register: registerID.
+
+	self internalPushInt64: value.
 	extA := 0.
 

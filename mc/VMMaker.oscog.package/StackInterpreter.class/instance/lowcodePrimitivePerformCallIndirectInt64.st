@@ -6,7 +6,7 @@ lowcodePrimitivePerformCallIndirectInt64
 	<var: #function type: #'char*' >
 	function := self internalPopStackPointer.
 
-            result := self lowcodeCalloutInt64Result: function.
-        
-	 self internalPushInt64: result.
+	result := self lowcodeCalloutInt64Result: function.
+
+	self internalPushInt64: result.
 

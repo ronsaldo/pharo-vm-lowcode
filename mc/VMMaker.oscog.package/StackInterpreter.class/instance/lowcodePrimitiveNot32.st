@@ -6,7 +6,7 @@ lowcodePrimitiveNot32
 	<var: #result type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            result := value bitXor: -1.
-        
-	 self internalPushInt32: result.
+	result := value bitXor: -1.
+
+	self internalPushInt32: result.
 

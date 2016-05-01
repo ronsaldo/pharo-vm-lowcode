@@ -5,8 +5,8 @@ lowcodePrimitivePushConstantUInt64
 	<var: #result type: #'sqLong' >
 	constant := extA.
 
-            result := constant.
-        
-	 self internalPushInt64: result.
+	result := constant.
+
+	self internalPushInt64: result.
 	extA := 0.
 

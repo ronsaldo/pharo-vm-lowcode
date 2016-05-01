@@ -6,7 +6,7 @@ lowcodePrimitiveLoadUInt32FromMemory
 	<var: #value type: #'sqInt' >
 	pointer := self internalPopStackPointer.
 
-            value := self uint32AtPointer: pointer.
-        
-	 self internalPushInt32: value.
+	value := self uint32AtPointer: pointer.
+
+	self internalPushInt32: value.
 

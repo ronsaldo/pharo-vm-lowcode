@@ -4,7 +4,7 @@ lowcodePrimitivePushZeroFloat64
 	| result |
 	<var: #result type: #'double' >
 
-            result := 0.0.
-        
-	 self internalPushFloat64: result.
+	result := 0.0.
+
+	self internalPushFloat64: result.
 

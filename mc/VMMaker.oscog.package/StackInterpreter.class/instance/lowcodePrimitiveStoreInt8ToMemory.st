@@ -7,6 +7,6 @@ lowcodePrimitiveStoreInt8ToMemory
 	value := self internalPopStackInt32.
 	pointer := self internalPopStackPointer.
 
-            self int8AtPointer: pointer put: value.
-        
+	self int8AtPointer: pointer put: value.
+
 

@@ -5,8 +5,8 @@ lowcodePrimitivePushPhysicalInt32
 	<var: #value type: #'sqInt' >
 	registerID := extA.
 
-            value := self lowcodeCalloutState: lowcodeCalloutState int32Register: registerID.
-        
-	 self internalPushInt32: value.
+	value := self lowcodeCalloutState: lowcodeCalloutState int32Register: registerID.
+
+	self internalPushInt32: value.
 	extA := 0.
 

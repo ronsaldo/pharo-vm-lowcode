@@ -5,10 +5,10 @@ lowcodePrimitivePerformCallInt64
 	<var: #result type: #'sqLong' >
 	function := extA.
 
-            "self externalizeIPandSP.
-            self LowcodeInterpreterCall: function Int64Result: result.
-            self internalizeIPandSP."
-        
-	 self internalPushInt64: result.
+	"self externalizeIPandSP.
+	self LowcodeInterpreterCall: function Int64Result: result.
+	self internalizeIPandSP."
+
+	self internalPushInt64: result.
 	extA := 0.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveZeroExtend64From8
 	<var: #result type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            result := self cCoerce: value to: 'uint8_t'.
-        
-	 self internalPushInt64: result.
+	result := self cCoerce: value to: 'uint8_t'.
+
+	self internalPushInt64: result.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveFloat64ToUInt64
 	<var: #int64Result type: #'sqLong' >
 	floatValue := self internalPopStackFloat64.
 
-            int64Result := self cCoerce: floatValue to: 'uint64_t'.
-        
-	 self internalPushInt64: int64Result.
+	int64Result := self cCoerce: floatValue to: 'uint64_t'.
+
+	self internalPushInt64: int64Result.
 

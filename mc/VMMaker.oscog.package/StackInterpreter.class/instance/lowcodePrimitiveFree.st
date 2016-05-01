@@ -5,6 +5,6 @@ lowcodePrimitiveFree
 	<var: #pointer type: #'char*' >
 	pointer := self internalPopStackPointer.
 
-            self free: pointer.
-        
+	self free: pointer.
+
 

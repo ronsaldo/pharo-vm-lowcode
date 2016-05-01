@@ -6,7 +6,7 @@ lowcodePrimitiveSignExtend32From8
 	<var: #result type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            result := self cCoerce: value to: 'signed char'.
-        
-	 self internalPushInt32: result.
+	result := self cCoerce: value to: 'signed char'.
+
+	self internalPushInt32: result.
 

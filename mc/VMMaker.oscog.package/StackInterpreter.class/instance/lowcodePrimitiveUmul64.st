@@ -8,8 +8,8 @@ lowcodePrimitiveUmul64
 	second := self internalPopStackInt64.
 	first := self internalPopStackInt64.
 
-            result := (self cCoerce: first to: 'uint64_t') *
-                        (self cCoerce: second to: 'uint64_t').
-        
-	 self internalPushInt64: result.
+	result := (self cCoerce: first to: 'uint64_t') *
+	(self cCoerce: second to: 'uint64_t').
+
+	self internalPushInt64: result.
 

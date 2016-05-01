@@ -6,7 +6,7 @@ lowcodePrimitiveSmallInt32ToOop
 	<var: #value type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            object := objectMemory integerObjectOf: value.
-        
-	 self internalPush: object.
+	object := objectMemory integerObjectOf: value.
+
+	self internalPush: object.
 

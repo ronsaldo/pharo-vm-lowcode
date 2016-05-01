@@ -6,7 +6,7 @@ lowcodePrimitiveMovePointerToPhysical
 	registerID := extA.
 	pointerValue := self internalPopStackPointer.
 
-            self lowcodeCalloutState: lowcodeCalloutState pointerRegister: registerID value: pointerValue.
-        
+	self lowcodeCalloutState: lowcodeCalloutState pointerRegister: registerID value: pointerValue.
+
 	extA := 0.
 

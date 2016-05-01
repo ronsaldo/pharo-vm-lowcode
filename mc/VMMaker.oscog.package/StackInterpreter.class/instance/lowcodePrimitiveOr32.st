@@ -8,7 +8,7 @@ lowcodePrimitiveOr32
 	second := self internalPopStackInt32.
 	first := self internalPopStackInt32.
 
-            result := first bitOr: second.
-        
-	 self internalPushInt32: result.
+	result := first bitOr: second.
+
+	self internalPushInt32: result.
 

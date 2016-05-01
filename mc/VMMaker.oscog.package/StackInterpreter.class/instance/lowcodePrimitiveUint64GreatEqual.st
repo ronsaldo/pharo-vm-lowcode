@@ -8,8 +8,8 @@ lowcodePrimitiveUint64GreatEqual
 	second := self internalPopStackInt64.
 	first := self internalPopStackInt64.
 
-            value := (self cCoerce: first to: 'uint64_t') >=
-                        (self cCoerce: second to: 'uint64_t') ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := (self cCoerce: first to: 'uint64_t') >=
+	(self cCoerce: second to: 'uint64_t') ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

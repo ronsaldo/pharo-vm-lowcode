@@ -6,7 +6,7 @@ lowcodePrimitiveLoadFloat32FromMemory
 	<var: #value type: #'float' >
 	pointer := self internalPopStackPointer.
 
-            value := self singleFloatAtPointer: pointer.
-        
-	 self internalPushFloat32: value.
+	value := self singleFloatAtPointer: pointer.
+
+	self internalPushFloat32: value.
 

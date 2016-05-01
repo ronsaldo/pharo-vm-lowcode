@@ -6,7 +6,7 @@ lowcodePrimitivePerformCallIndirectFloat32
 	<var: #function type: #'char*' >
 	function := self internalPopStackPointer.
 
-            result := self lowcodeCalloutFloat32Result: function.
-        
-	 self internalPushFloat32: result.
+	result := self lowcodeCalloutFloat32Result: function.
+
+	self internalPushFloat32: result.
 

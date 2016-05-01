@@ -8,7 +8,7 @@ lowcodePrimitiveFloat32Div
 	second := self internalPopStackFloat32.
 	first := self internalPopStackFloat32.
 
-            result := first / second.
-        
-	 self internalPushFloat32: result.
+	result := first / second.
+
+	self internalPushFloat32: result.
 

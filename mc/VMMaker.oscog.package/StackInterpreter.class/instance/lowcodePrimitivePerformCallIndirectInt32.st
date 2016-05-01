@@ -6,7 +6,7 @@ lowcodePrimitivePerformCallIndirectInt32
 	<var: #function type: #'char*' >
 	function := self internalPopStackPointer.
 
-            result := self lowcodeCalloutInt32Result: function.
-        
-	 self internalPushInt32: result.
+	result := self lowcodeCalloutInt32Result: function.
+
+	self internalPushInt32: result.
 

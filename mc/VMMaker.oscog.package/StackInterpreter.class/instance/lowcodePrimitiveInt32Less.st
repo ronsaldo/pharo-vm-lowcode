@@ -8,7 +8,7 @@ lowcodePrimitiveInt32Less
 	second := self internalPopStackInt32.
 	first := self internalPopStackInt32.
 
-            value := first < second ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := first < second ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

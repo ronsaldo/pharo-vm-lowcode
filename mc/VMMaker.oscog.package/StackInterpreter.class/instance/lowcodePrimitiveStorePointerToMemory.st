@@ -7,6 +7,6 @@ lowcodePrimitiveStorePointerToMemory
 	pointerValue := self internalPopStackPointer.
 	memoryPointer := self internalPopStackPointer.
 
-            self pointerAtPointer: memoryPointer put: pointerValue.
-        
+	self pointerAtPointer: memoryPointer put: pointerValue.
+
 

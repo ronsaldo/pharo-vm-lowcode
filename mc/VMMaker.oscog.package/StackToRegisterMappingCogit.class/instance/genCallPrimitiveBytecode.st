@@ -18,13 +18,11 @@ genCallPrimitiveBytecode
 				[^self genUnaryInlinePrimitive: prim - 1000].
 				
 			prim < 3000 ifTrue:
-				[self ssTop type = SSConstant ifTrue:
-					[^self genBinaryVarOpConstInlinePrimitive: prim - 2000].
-				 (self ssValue: 1) type = SSConstant ifTrue:
-					[^self genBinaryConstOpVarInlinePrimitive: prim - 2000].
-				 ^self genBinaryVarOpVarInlinePrimitive: prim - 2000].
+				[^ self genBinaryInlinePrimitive: prim - 2000].
 
 			prim < 4000 ifTrue:
-				[^self genTrinaryInlinePrimitive: prim - 3000]].
+				[^self genTrinaryInlinePrimitive: prim - 3000].
+		].
+
 
 	^EncounteredUnknownBytecode

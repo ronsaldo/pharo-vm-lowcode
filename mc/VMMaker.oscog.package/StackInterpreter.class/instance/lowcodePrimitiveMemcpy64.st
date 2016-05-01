@@ -9,6 +9,6 @@ lowcodePrimitiveMemcpy64
 	source := self internalPopStackPointer.
 	dest := self internalPopStackPointer.
 
-            self mem: dest cp: source y: size.
-        
+	self mem: dest cp: source y: size.
+
 

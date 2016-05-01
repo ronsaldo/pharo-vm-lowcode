@@ -6,7 +6,7 @@ lowcodePrimitiveStoreLocalFloat64
 	baseOffset := extA.
 	value := self internalPopStackFloat64.
 
-            stackPages floatAtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP) put: value.
-        
+	stackPages floatAtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP) put: value.
+
 	extA := 0.
 

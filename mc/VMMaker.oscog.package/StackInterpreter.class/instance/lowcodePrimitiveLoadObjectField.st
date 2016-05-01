@@ -7,8 +7,8 @@ lowcodePrimitiveLoadObjectField
 	fieldIndex := extA.
 	object := self internalPopStack.
 
-            fieldValue := self fetchPointer: fieldIndex ofObject: object.
-        
-	 self internalPush: fieldValue.
+	fieldValue := self fetchPointer: fieldIndex ofObject: object.
+
+	self internalPush: fieldValue.
 	extA := 0.
 

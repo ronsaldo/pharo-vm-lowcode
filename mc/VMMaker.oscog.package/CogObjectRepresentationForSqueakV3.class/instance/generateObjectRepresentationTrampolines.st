@@ -19,9 +19,22 @@ generateObjectRepresentationTrampolines
 												arg: ReceiverResultReg
 												regsToSave: (cogit callerSavedRegMask bitClear: (cogit registerMaskFor: ReceiverResultReg))
 												result: TempReg.
+	cePositive32BitValueOfTrampoline := cogit genTrampolineFor: #positive32BitValueOf:
+												called: 'cePositive32BitValueOfTrampoline'
+												arg: ReceiverResultReg
+												result: TempReg.
+	ceSigned32BitIntegerTrampoline := cogit genTrampolineFor: #signed32BitIntegerFor:
+												called: 'ceSigned32BitIntegerTrampoline'
+												arg: ReceiverResultReg
+												result: TempReg.
+	ceSigned32BitValueOfTrampoline := cogit genTrampolineFor: #signed32BitValueOf:
+												called: 'ceSigned32BitValueOfTrampoline'
+												arg: ReceiverResultReg
+												result: TempReg.
 	ceActiveContextTrampoline := self genActiveContextTrampoline.
 	ceClosureCopyTrampoline := cogit genTrampolineFor: #ceClosureCopyDescriptor:
 										called: 'ceClosureCopyTrampoline'
 										arg: SendNumArgsReg
 										regsToSave: (cogit callerSavedRegMask bitClear: (cogit registerMaskFor: ReceiverResultReg))
-										result: ReceiverResultReg
+										result: ReceiverResultReg.
+	self generateLowcodeObjectTrampolines.

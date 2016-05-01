@@ -8,7 +8,7 @@ lowcodePrimitiveDiv64
 	second := self internalPopStackInt64.
 	first := self internalPopStackInt64.
 
-            result := first // second.
-        
-	 self internalPushInt64: result.
+	result := first // second.
+
+	self internalPushInt64: result.
 

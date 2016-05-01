@@ -5,8 +5,8 @@ lowcodePrimitivePushPhysicalPointer
 	<var: #pointerValue type: #'char*' >
 	registerID := extA.
 
-            pointerValue := self lowcodeCalloutState: lowcodeCalloutState pointerRegister: registerID.
-        
-	 self internalPushPointer: pointerValue.
+	pointerValue := self lowcodeCalloutState: lowcodeCalloutState pointerRegister: registerID.
+
+	self internalPushPointer: pointerValue.
 	extA := 0.
 

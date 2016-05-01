@@ -6,7 +6,7 @@ lowcodePrimitiveBoolean64ToOop
 	<var: #value type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            object := value ~= 0 ifTrue: [ objectMemory trueObject ] ifFalse: [objectMemory falseObject].
-        
-	 self internalPush: object.
+	object := value ~= 0 ifTrue: [ objectMemory trueObject ] ifFalse: [objectMemory falseObject].
+
+	self internalPush: object.
 

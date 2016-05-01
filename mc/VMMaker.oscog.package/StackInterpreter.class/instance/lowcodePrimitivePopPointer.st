@@ -6,3 +6,4 @@ lowcodePrimitivePopPointer
 	pointerValue := self internalPopStackPointer.
 
 
+

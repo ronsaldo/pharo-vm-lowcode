@@ -8,7 +8,7 @@ lowcodePrimitiveXor32
 	second := self internalPopStackInt32.
 	first := self internalPopStackInt32.
 
-            result := first bitXor: second.
-        
-	 self internalPushInt32: result.
+	result := first bitXor: second.
+
+	self internalPushInt32: result.
 

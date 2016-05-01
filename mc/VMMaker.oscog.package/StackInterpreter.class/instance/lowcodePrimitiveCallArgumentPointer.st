@@ -5,6 +5,6 @@ lowcodePrimitiveCallArgumentPointer
 	<var: #pointerValue type: #'char*' >
 	pointerValue := self internalPopStackPointer.
 
-            self internalPushShadowCallStackPointer: pointerValue.
-        
+	self internalPushShadowCallStackPointer: pointerValue.
+
 

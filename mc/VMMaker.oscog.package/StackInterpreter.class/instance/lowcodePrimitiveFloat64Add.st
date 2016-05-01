@@ -8,7 +8,7 @@ lowcodePrimitiveFloat64Add
 	second := self internalPopStackFloat64.
 	first := self internalPopStackFloat64.
 
-            result := first + second.
-        
-	 self internalPushFloat64: result.
+	result := first + second.
+
+	self internalPushFloat64: result.
 

@@ -5,8 +5,8 @@ lowcodePrimitiveLoadLocalUInt64
 	<var: #value type: #'sqLong' >
 	baseOffset := extA.
 
-            value := stackPages uint64AtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP).
-        
-	 self internalPushInt64: value.
+	value := stackPages uint64AtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP).
+
+	self internalPushInt64: value.
 	extA := 0.
 

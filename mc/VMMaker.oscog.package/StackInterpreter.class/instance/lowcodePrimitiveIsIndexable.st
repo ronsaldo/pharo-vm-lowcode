@@ -6,7 +6,7 @@ lowcodePrimitiveIsIndexable
 	<var: #value type: #'sqInt' >
 	object := self internalPopStack.
 
-            value := (objectMemory isIndexable: object) ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := (objectMemory isIndexable: object) ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

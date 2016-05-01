@@ -5,8 +5,8 @@ lowcodePrimitivePushConstantUInt32
 	<var: #result type: #'sqInt' >
 	constant := extA.
 
-            result := constant.
-        
-	 self internalPushInt32: result.
+	result := constant.
+
+	self internalPushInt32: result.
 	extA := 0.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveNot64
 	<var: #result type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            result := value bitXor: -1.
-        
-	 self internalPushInt64: result.
+	result := value bitXor: -1.
+
+	self internalPushInt64: result.
 

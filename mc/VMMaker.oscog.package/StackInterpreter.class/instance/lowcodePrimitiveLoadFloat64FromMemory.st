@@ -6,7 +6,7 @@ lowcodePrimitiveLoadFloat64FromMemory
 	<var: #value type: #'double' >
 	pointer := self internalPopStackPointer.
 
-            value := self floatAtPointer: pointer.
-        
-	 self internalPushFloat64: value.
+	value := self floatAtPointer: pointer.
+
+	self internalPushFloat64: value.
 

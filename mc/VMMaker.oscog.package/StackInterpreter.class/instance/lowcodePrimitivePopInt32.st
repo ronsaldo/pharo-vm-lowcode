@@ -6,3 +6,4 @@ lowcodePrimitivePopInt32
 	value := self internalPopStackInt32.
 
 
+

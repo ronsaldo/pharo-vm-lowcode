@@ -7,6 +7,6 @@ lowcodePrimitiveStoreFloat32ToMemory
 	floatValue := self internalPopStackFloat32.
 	pointer := self internalPopStackPointer.
 
-            self singleFloatAtPointer: pointer put: floatValue.
-        
+	self singleFloatAtPointer: pointer put: floatValue.
+
 

@@ -5,8 +5,8 @@ lowcodePrimitiveLoadLocalAddress
 	<var: #pointer type: #'char*' >
 	baseOffset := extA.
 
-            pointer := self framePointerOfNativeLocal: baseOffset in: localFP.
-        
-	 self internalPushPointer: pointer.
+	pointer := self framePointerOfNativeLocal: baseOffset in: localFP.
+
+	self internalPushPointer: pointer.
 	extA := 0.
 

@@ -195,7 +195,8 @@
 		"debugOpcodeIndices",
 		"disassemblingMethod",
 		"ceMallocTrampoline",
-		"ceFreeTrampoline" ],
+		"ceFreeTrampoline",
+		"ceFFICalloutTrampoline" ],
 	"name" : "Cogit",
 	"pools" : [
 		"CogAbstractRegisters",

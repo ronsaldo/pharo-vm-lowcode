@@ -8,13 +8,12 @@ lowcodePrimitivePerformCallStructure
 	structureSize := extB.
 	result := self internalPopStackPointer.
 
-            "self LowcodeInterpreterCallArgumentPointer: result.
+	"self LowcodeInterpreterCallArgumentPointer: result.
+	self externalizeIPandSP.
+	self LowcodeInterpreterCall: function StructureResult: resultPointer Size: structureSize.
+	self internalizeIPandSP."
 
-            self externalizeIPandSP.
-            self LowcodeInterpreterCall: function StructureResult: resultPointer Size: structureSize.
-            self internalizeIPandSP."
-        
-	 self internalPushPointer: resultPointer.
+	self internalPushPointer: resultPointer.
 	extA := 0.
 	extB := 0.
 

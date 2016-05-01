@@ -4,7 +4,7 @@ lowcodePrimitivePushNullPointer
 	| result |
 	<var: #result type: #'char*' >
 
-            result := 0.
-        
-	 self internalPushPointer: result.
+	result := 0.
+
+	self internalPushPointer: result.
 

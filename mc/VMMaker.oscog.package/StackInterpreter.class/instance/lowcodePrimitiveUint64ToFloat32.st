@@ -6,7 +6,7 @@ lowcodePrimitiveUint64ToFloat32
 	<var: #result type: #'float' >
 	value := self internalPopStackInt64.
 
-            result := self cCoerce: (self cCoerce: value to: 'uint64_t') to: 'float'.
-        
-	 self internalPushFloat32: result.
+	result := self cCoerce: (self cCoerce: value to: 'uint64_t') to: 'float'.
+
+	self internalPushFloat32: result.
 

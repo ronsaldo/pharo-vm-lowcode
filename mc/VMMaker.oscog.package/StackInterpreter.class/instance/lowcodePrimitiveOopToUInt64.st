@@ -6,7 +6,7 @@ lowcodePrimitiveOopToUInt64
 	<var: #value type: #'sqLong' >
 	object := self internalPopStack.
 
-            value := self positive64BitValueOf: object.
-        
-	 self internalPushInt64: value.
+	value := self positive64BitValueOf: object.
+
+	self internalPushInt64: value.
 

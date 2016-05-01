@@ -6,7 +6,7 @@ lowcodePrimitiveInstantiateOop
 	<var: #classOop type: #'sqInt' >
 	classOop := self internalPopStack.
 
-            object := objectMemory instantiateClass: classOop indexableSize: 0.
-        
-	 self internalPush: object.
+	object := objectMemory instantiateClass: classOop indexableSize: 0.
+
+	self internalPush: object.
 

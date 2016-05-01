@@ -8,7 +8,7 @@ lowcodePrimitivePointerAddOffset32
 	offset := self internalPopStackInt32.
 	base := self internalPopStackPointer.
 
-            result := base + offset.
-        
-	 self internalPushPointer: result.
+	result := base + offset.
+
+	self internalPushPointer: result.
 

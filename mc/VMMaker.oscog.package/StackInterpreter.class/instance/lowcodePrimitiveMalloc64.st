@@ -6,7 +6,7 @@ lowcodePrimitiveMalloc64
 	<var: #size type: #'sqLong' >
 	size := self internalPopStackInt64.
 
-            pointer := self malloc: size.
-        
-	 self internalPushPointer: pointer.
+	pointer := self malloc: size.
+
+	self internalPushPointer: pointer.
 

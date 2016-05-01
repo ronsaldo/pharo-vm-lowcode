@@ -7,9 +7,9 @@ lowcodePrimitiveDuplicateFloat64
 	<var: #dup2 type: #'double' >
 	value := self internalPopStackFloat64.
 
-            dup1 := value.
-            dup2 := value.
-        
-	 self internalPushFloat64: dup1.
-	 self internalPushFloat64: dup2.
+	dup1 := value.
+	dup2 := value.
+
+	self internalPushFloat64: dup1.
+	self internalPushFloat64: dup2.
 

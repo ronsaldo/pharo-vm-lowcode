@@ -8,7 +8,7 @@ lowcodePrimitivePointerEqual
 	second := self internalPopStackPointer.
 	first := self internalPopStackPointer.
 
-            value := first = second ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := first = second ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

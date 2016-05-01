@@ -6,7 +6,7 @@ lowcodePrimitiveLoadInt64FromMemory
 	<var: #value type: #'sqLong' >
 	pointer := self internalPopStackPointer.
 
-            value := self int64AtPointer: pointer.
-        
-	 self internalPushInt64: value.
+	value := self int64AtPointer: pointer.
+
+	self internalPushInt64: value.
 

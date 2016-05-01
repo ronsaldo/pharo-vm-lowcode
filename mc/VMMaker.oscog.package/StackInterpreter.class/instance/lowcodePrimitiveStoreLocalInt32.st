@@ -6,7 +6,7 @@ lowcodePrimitiveStoreLocalInt32
 	baseOffset := extA.
 	value := self internalPopStackInt32.
 
-            stackPages int32AtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP) put: value.
-        
+	stackPages int32AtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP) put: value.
+
 	extA := 0.
 

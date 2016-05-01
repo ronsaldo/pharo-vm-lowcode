@@ -9,8 +9,8 @@ lowcodePrimitivePerformCallIndirectStructure
 	result := self internalPopStackPointer.
 	function := self internalPopStackPointer.
 
-            resultPointer := self lowcodeCallout: function structureResult: result.
-        
-	 self internalPushPointer: resultPointer.
+	resultPointer := self lowcodeCallout: function structureResult: result.
+
+	self internalPushPointer: resultPointer.
 	extA := 0.
 

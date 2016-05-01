@@ -6,7 +6,7 @@ lowcodePrimitivePointerToInt64
 	<var: #result type: #'sqLong' >
 	pointer := self internalPopStackPointer.
 
-            result := self cCoerce: pointer to: 'uintptr_t'.
-        
-	 self internalPushInt64: result.
+	result := self cCoerce: pointer to: 'uintptr_t'.
+
+	self internalPushInt64: result.
 

@@ -8,7 +8,7 @@ lowcodePrimitiveXor64
 	second := self internalPopStackInt64.
 	first := self internalPopStackInt64.
 
-            result := first bitXor: second.
-        
-	 self internalPushInt64: result.
+	result := first bitXor: second.
+
+	self internalPushInt64: result.
 

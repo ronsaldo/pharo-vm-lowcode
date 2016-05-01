@@ -5,8 +5,8 @@ lowcodePrimitiveLoadLocalFloat32
 	<var: #floatValue type: #'float' >
 	baseOffset := extA.
 
-            floatValue := stackPages singleFloatAtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP).
-        
-	 self internalPushFloat32: floatValue.
+	floatValue := stackPages singleFloatAtPointer: (self framePointerOfNativeLocal: baseOffset in: localFP).
+
+	self internalPushFloat32: floatValue.
 	extA := 0.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveOopToFloat32
 	<var: #value type: #'float' >
 	object := self internalPopStack.
 
-            value := self floatValueOf: object.
-        
-	 self internalPushFloat32: value.
+	value := self floatValueOf: object.
+
+	self internalPushFloat32: value.
 

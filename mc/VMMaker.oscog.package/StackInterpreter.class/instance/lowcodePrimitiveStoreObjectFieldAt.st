@@ -9,6 +9,6 @@ lowcodePrimitiveStoreObjectFieldAt
 	fieldIndex := self internalPopStackInt32.
 	object := self internalPopStack.
 
-            objectMemory storePointer: fieldIndex ofObject: object withValue: value.
-        
+	objectMemory storePointer: fieldIndex ofObject: object withValue: value.
+
 

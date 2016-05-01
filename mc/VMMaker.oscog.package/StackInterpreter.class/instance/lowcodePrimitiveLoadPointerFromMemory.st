@@ -6,7 +6,7 @@ lowcodePrimitiveLoadPointerFromMemory
 	<var: #pointer type: #'char*' >
 	pointer := self internalPopStackPointer.
 
-            pointerResult := self pointerAtPointer: pointer.
-        
-	 self internalPushPointer: pointerResult.
+	pointerResult := self pointerAtPointer: pointer.
+
+	self internalPushPointer: pointerResult.
 

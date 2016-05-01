@@ -6,7 +6,7 @@ lowcodePrimitiveNeg32
 	<var: #result type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            result := value negated.
-        
-	 self internalPushInt32: result.
+	result := value negated.
+
+	self internalPushInt32: result.
 

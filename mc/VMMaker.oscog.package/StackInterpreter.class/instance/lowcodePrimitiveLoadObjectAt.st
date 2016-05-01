@@ -8,7 +8,7 @@ lowcodePrimitiveLoadObjectAt
 	fieldIndex := self internalPopStackInt32.
 	object := self internalPopStack.
 
-            fieldValue := objectMemory fetchPointer: fieldIndex ofObject: object.
-        
-	 self internalPush: fieldValue.
+	fieldValue := objectMemory fetchPointer: fieldIndex ofObject: object.
+
+	self internalPush: fieldValue.
 

@@ -5,6 +5,6 @@ lowcodePrimitivePin
 	<var: #object type: #'sqInt' >
 	object := self internalPopStack.
 
-            objectMemory pinObject: object.
-        
+	objectMemory pinObject: object.
+
 

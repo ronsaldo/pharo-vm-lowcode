@@ -6,7 +6,7 @@ lowcodePrimitiveFirstIndexableFieldPointer
 	<var: #pointer type: #'char*' >
 	object := self internalPopStack.
 
-            pointer := objectMemory firstIndexableField: object.
-        
-	 self internalPushPointer: pointer.
+	pointer := objectMemory firstIndexableField: object.
+
+	self internalPushPointer: pointer.
 

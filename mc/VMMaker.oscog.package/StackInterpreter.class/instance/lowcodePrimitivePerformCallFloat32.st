@@ -5,10 +5,10 @@ lowcodePrimitivePerformCallFloat32
 	<var: #result type: #'float' >
 	function := extA.
 
-            "self externalizeIPandSP.
-            self LowcodeInterpreterCall: function Float32Result: result.
-            self internalizeIPandSP."
-        
-	 self internalPushFloat32: result.
+	"self externalizeIPandSP.
+	self LowcodeInterpreterCall: function Float32Result: result.
+	self internalizeIPandSP."
+
+	self internalPushFloat32: result.
 	extA := 0.
 

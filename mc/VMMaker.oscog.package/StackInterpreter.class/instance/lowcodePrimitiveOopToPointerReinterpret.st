@@ -6,7 +6,7 @@ lowcodePrimitiveOopToPointerReinterpret
 	<var: #pointer type: #'char*' >
 	object := self internalPopStack.
 
-            pointer := self cCoerce: object to: 'char*'.
-        
-	 self internalPushPointer: pointer.
+	pointer := self cCoerce: object to: 'char*'.
+
+	self internalPushPointer: pointer.
 

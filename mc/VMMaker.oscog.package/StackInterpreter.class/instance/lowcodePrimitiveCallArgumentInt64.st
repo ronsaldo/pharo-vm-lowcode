@@ -5,6 +5,6 @@ lowcodePrimitiveCallArgumentInt64
 	<var: #value type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            self internalPushShadowCallStackInt64: value.
-        
+	self internalPushShadowCallStackInt64: value.
+
 

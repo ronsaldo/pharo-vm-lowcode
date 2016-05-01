@@ -8,7 +8,7 @@ lowcodePrimitiveOopEqual
 	second := self internalPopStack.
 	first := self internalPopStack.
 
-            value := first = second ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := first = second ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

@@ -12,7 +12,7 @@ lowcodePrimitiveEffectiveAddress32
 	index := self internalPopStackInt32.
 	base := self internalPopStackPointer.
 
-            result := base + (index*scale) + offset.
-        
-	 self internalPushPointer: result.
+	result := base + (index*scale) + offset.
+
+	self internalPushPointer: result.
 

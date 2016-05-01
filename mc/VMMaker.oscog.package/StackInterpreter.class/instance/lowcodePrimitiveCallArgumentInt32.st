@@ -5,6 +5,6 @@ lowcodePrimitiveCallArgumentInt32
 	<var: #value type: #'sqInt' >
 	value := self internalPopStackInt32.
 
-            self internalPushShadowCallStackInt32: value.
-        
+	self internalPushShadowCallStackInt32: value.
+
 

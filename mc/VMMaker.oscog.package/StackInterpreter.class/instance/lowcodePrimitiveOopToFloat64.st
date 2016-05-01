@@ -6,7 +6,7 @@ lowcodePrimitiveOopToFloat64
 	<var: #value type: #'double' >
 	object := self internalPopStack.
 
-            value := self floatValueOf: object.
-        
-	 self internalPushFloat64: value.
+	value := self floatValueOf: object.
+
+	self internalPushFloat64: value.
 

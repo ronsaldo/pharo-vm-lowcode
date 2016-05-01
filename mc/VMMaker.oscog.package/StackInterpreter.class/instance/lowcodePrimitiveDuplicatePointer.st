@@ -7,9 +7,9 @@ lowcodePrimitiveDuplicatePointer
 	<var: #pointerValue type: #'char*' >
 	pointerValue := self internalPopStackPointer.
 
-            dup1 := pointerValue.
-            dup2 := pointerValue.
-        
-	 self internalPushPointer: dup1.
-	 self internalPushPointer: dup2.
+	dup1 := pointerValue.
+	dup2 := pointerValue.
+
+	self internalPushPointer: dup1.
+	self internalPushPointer: dup2.
 

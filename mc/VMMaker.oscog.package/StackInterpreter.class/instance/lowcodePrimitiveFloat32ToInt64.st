@@ -6,7 +6,7 @@ lowcodePrimitiveFloat32ToInt64
 	<var: #result type: #'sqLong' >
 	value := self internalPopStackFloat32.
 
-            result := self cCoerce: value to: 'sqLong'.
-        
-	 self internalPushInt64: result.
+	result := self cCoerce: value to: 'sqLong'.
+
+	self internalPushInt64: result.
 

@@ -8,8 +8,8 @@ lowcodePrimitiveUrem64
 	second := self internalPopStackInt64.
 	first := self internalPopStackInt64.
 
-            result := (self cCoerce: first to: 'unsigned int') \\
-                        (self cCoerce: second to: 'unsigned int').
-        
-	 self internalPushInt64: result.
+	result := (self cCoerce: first to: 'unsigned int') \\
+	(self cCoerce: second to: 'unsigned int').
+
+	self internalPushInt64: result.
 

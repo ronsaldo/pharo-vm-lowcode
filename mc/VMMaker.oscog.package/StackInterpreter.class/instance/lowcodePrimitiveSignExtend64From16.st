@@ -6,7 +6,7 @@ lowcodePrimitiveSignExtend64From16
 	<var: #result type: #'sqLong' >
 	value := self internalPopStackInt64.
 
-            result := self cCoerce: value to: 'int16_t'.
-        
-	 self internalPushInt64: result.
+	result := self cCoerce: value to: 'int16_t'.
+
+	self internalPushInt64: result.
 

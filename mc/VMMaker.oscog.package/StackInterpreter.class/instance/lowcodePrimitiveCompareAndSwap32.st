@@ -9,6 +9,8 @@ lowcodePrimitiveCompareAndSwap32
 	newValue := self internalPopStackInt32.
 	oldValue := self internalPopStackInt32.
 	check := self internalPopStackPointer.
+
 	self abort.
-	 self internalPushInt32: value.
+
+	self internalPushInt32: value.
 

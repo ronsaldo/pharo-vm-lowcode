@@ -5,8 +5,8 @@ lowcodePrimitivePushPhysicalFloat64
 	<var: #value type: #'double' >
 	registerID := extA.
 
-            value := self lowcodeCalloutState: lowcodeCalloutState float64Register: registerID.
-        
-	 self internalPushFloat64: value.
+	value := self lowcodeCalloutState: lowcodeCalloutState float64Register: registerID.
+
+	self internalPushFloat64: value.
 	extA := 0.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveByteSizeOf
 	<var: #value type: #'sqInt' >
 	object := self internalPopStack.
 
-            value := self byteSizeOf: object.
-        
-	 self internalPushInt32: value.
+	value := self byteSizeOf: object.
+
+	self internalPushInt32: value.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveFloat64ToFloat32
 	<var: #singleFloatResult type: #'float' >
 	floatValue := self internalPopStackFloat64.
 
-            singleFloatResult := self cCoerce: floatValue to: 'float'.
-        
-	 self internalPushFloat32: singleFloatResult.
+	singleFloatResult := self cCoerce: floatValue to: 'float'.
+
+	self internalPushFloat32: singleFloatResult.
 

@@ -6,7 +6,7 @@ lowcodePrimitiveTruncate64To32
 	<var: #result type: #'sqInt' >
 	value := self internalPopStackInt64.
 
-            result := value bitAnd: 16rFFFFFFFF.
-        
-	 self internalPushInt32: result.
+	result := value bitAnd: 16rFFFFFFFF.
+
+	self internalPushInt32: result.
 

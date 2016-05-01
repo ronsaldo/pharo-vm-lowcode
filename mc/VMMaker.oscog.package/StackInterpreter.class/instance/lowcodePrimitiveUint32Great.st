@@ -8,8 +8,8 @@ lowcodePrimitiveUint32Great
 	second := self internalPopStackInt32.
 	first := self internalPopStackInt32.
 
-            value := (self cCoerce: first to: 'unsigned int') >
-                        (self cCoerce: second to: 'unsigned int') ifTrue: [1] ifFalse: [0].
-        
-	 self internalPushInt32: value.
+	value := (self cCoerce: first to: 'unsigned int') >
+	(self cCoerce: second to: 'unsigned int') ifTrue: [1] ifFalse: [0].
+
+	self internalPushInt32: value.
 

@@ -4,7 +4,7 @@ lowcodePrimitivePushZero64
 	| result |
 	<var: #result type: #'sqLong' >
 
-            result := 0.
-        
-	 self internalPushInt64: result.
+	result := 0.
+
+	self internalPushInt64: result.
 

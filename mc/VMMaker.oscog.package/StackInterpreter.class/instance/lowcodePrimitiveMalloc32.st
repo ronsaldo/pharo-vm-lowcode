@@ -6,7 +6,7 @@ lowcodePrimitiveMalloc32
 	<var: #size type: #'sqInt' >
 	size := self internalPopStackInt32.
 
-            pointer := self malloc: size.
-        
-	 self internalPushPointer: pointer.
+	pointer := self malloc: size.
+
+	self internalPushPointer: pointer.
 

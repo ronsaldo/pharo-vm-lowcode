@@ -4,7 +4,7 @@ lowcodePrimitivePushSessionIdentifier
 	| value |
 	<var: #value type: #'sqInt' >
 
-            value := self getThisSessionID.
-        
-	 self internalPushInt32: value.
+	value := self getThisSessionID.
+
+	self internalPushInt32: value.
 

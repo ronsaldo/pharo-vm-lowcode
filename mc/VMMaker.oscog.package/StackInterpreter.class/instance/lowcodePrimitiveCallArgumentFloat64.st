@@ -5,6 +5,6 @@ lowcodePrimitiveCallArgumentFloat64
 	<var: #argumentValue type: #'double' >
 	argumentValue := self internalPopStackFloat64.
 
-            self internalPushShadowCallStackFloat64: argumentValue.
-        
+	self internalPushShadowCallStackFloat64: argumentValue.
+
 

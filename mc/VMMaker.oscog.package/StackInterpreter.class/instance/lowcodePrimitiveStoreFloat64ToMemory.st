@@ -7,6 +7,6 @@ lowcodePrimitiveStoreFloat64ToMemory
 	doubleValue := self internalPopStackFloat64.
 	pointer := self internalPopStackPointer.
 
-            self floatAtPointer: pointer put: doubleValue.
-        
+	self floatAtPointer: pointer put: doubleValue.
+
 

@@ -6,7 +6,7 @@ lowcodePrimitiveFloat32ToInt32
 	<var: #result type: #'sqInt' >
 	value := self internalPopStackFloat32.
 
-            result := self cCoerce: value to: 'sqInt'.
-        
-	 self internalPushInt32: result.
+	result := self cCoerce: value to: 'sqInt'.
+
+	self internalPushInt32: result.
 

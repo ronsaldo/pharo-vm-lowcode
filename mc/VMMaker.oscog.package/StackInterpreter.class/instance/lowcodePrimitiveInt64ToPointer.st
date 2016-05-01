@@ -6,9 +6,9 @@ lowcodePrimitiveInt64ToPointer
 	<var: #result type: #'char*' >
 	value := self internalPopStackInt64.
 
-            result := self cCoerce:
-                        (self cCoerce: value to: 'intptr_t')
-                       to: 'char*'.
-        
-	 self internalPushPointer: result.
+	result := self cCoerce:
+	(self cCoerce: value to: 'intptr_t')
+	to: 'char*'.
+
+	self internalPushPointer: result.
 
