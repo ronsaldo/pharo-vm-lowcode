@@ -1,7 +1,7 @@
 /* sqMemoryAccess.h -- memory accessors (and associated type definitions)
- * 
+ *
  * Author: Ian.Piumarta@squeakland.org
- * 
+ *
  * Last edited: 2013-10-14 12:23:39 by eliot on McStalker
  */
 
@@ -140,6 +140,10 @@
   static inline sqLong long64Atput(sqInt oop, sqLong val)		{ return long64AtPointerput(pointerForOop(oop), val); }
   static inline sqInt oopAt(sqInt oop)				{ return oopAtPointer(pointerForOop(oop)); }
   static inline sqInt oopAtput(sqInt oop, sqInt val)		{ return oopAtPointerput(pointerForOop(oop), val); }
+
+  static inline sqLong asIEEE64BitWord(double val) {return *((sqLong*)&val); }
+  static inline unsigned int asIEEE32BitWord(float val) {return *((unsigned int*)&val); }
+
 #else /* USE_INLINE_MEMORY_ACCESSORS */
   /* Use macros when static inline functions aren't efficient. */
 # define byteAtPointer(ptr)			((sqInt)(*((unsigned char *)(ptr))))
@@ -202,6 +206,9 @@
 # define intAtput(oop,val)			intAtPointerput(atPointerArg(oop), val)
 # define oopAt(oop)					oopAtPointer(atPointerArg(oop))
 # define oopAtput(oop,val)			oopAtPointerput(atPointerArg(oop), val)
+
+# define asIEEE64BitWord(val) (*((sqLong*)&val))
+# define asIEEE32BitWord(val) (*((unsigned int*)&val))
 #endif /* USE_INLINE_MEMORY_ACCESSORS */
 
 #define long32At	intAt

@@ -1,0 +1,3 @@
+inline ffi
+endHighLevelCallWithoutCleanup
+	self callSwitchToSmalltalkStack.

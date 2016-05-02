@@ -1,0 +1,7 @@
+inline primitive support
+genLcInt32ToOop: value
+	value ~= ReceiverResultReg ifTrue: [ cogit MoveR: value R: ReceiverResultReg.].
+	cogit CallRT: ceSigned32BitIntegerTrampoline.
+
+	cogit MoveR: TempReg R: ReceiverResultReg.
+	cogit ssPushRegister: ReceiverResultReg.
