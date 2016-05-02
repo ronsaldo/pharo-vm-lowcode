@@ -1,13 +1,14 @@
 simulation stack
 ssPushNativeConstantFloat64: aFloat64
+	<var: #aFloat64 type: #double>
 	self ssNativePush: 1.
 	simNativeSpillBase > simNativeStackPtr ifTrue:
 		[simNativeSpillBase := simNativeStackPtr max: 0].
 	simNativeStackSize := simNativeStackSize + 8.
 	self ssNativeTop
-		type: SSConstantFloat32;
+		type: SSConstantFloat64;
 		spilled: false;
 		offset: simNativeStackSize;
-		constantFloat32: aFloat64;
+		constantFloat64: aFloat64;
 		bcptr: bytecodePC.
 	^0

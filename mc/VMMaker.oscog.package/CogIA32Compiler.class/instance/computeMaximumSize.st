@@ -157,6 +157,7 @@ computeMaximumSize
 		[MoveCwR]		-> [^5].
 		[MoveRR]		-> [^2].
 		[MoveRdRd]		-> [^4].
+		[MoveRsRs]		-> [^4].
 		[MoveAwR]		-> [^(operands at: 1) = EAX ifTrue: [5] ifFalse: [6]].
 		[MoveRAw]		-> [^(operands at: 0) = EAX ifTrue: [5] ifFalse: [6]].
 		[MoveAbR]		-> [^7].

@@ -2,12 +2,12 @@ initialization
 generateLowcodeObjectTrampolines
 	ceFloatObjectOfTrampoline := cogit genTrampolineFor: #floatObjectOf:
 												called: 'ceFloatObjectOfTrampoline'
-												arg: DPFPReg0
+												floatArg: DPFPReg0
 												result: TempReg.
 	ceFloatValueOfTrampoline := cogit genTrampolineFor: #floatValueOf:
 												called: 'ceFloatValueOfTrampoline'
 												arg: ReceiverResultReg
-												result: DPFPReg0.
+												floatResult: DPFPReg0.
 	ceInstantiateClassIndexableSizeTrampoline := cogit genTrampolineFor: #instantiateClass:indexableSize:
 												called: 'ceInstantiateClassIndexableSizeTrampoline'
 												arg: ReceiverResultReg

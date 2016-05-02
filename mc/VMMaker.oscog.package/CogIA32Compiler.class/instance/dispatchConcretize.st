@@ -25,6 +25,8 @@ dispatchConcretize
 		[XCHGAwR]				-> [^self concretizeXCHGAwR].
 		[XCHGMwrR]			-> [^self concretizeXCHGMwrR].
 		[XCHGRR]				-> [^self concretizeXCHGRR].
+		[FSTPS]					-> [^self concretizeFSTPS].
+		[FSTPD]					-> [^self concretizeFSTPD].
 		"Control"
 		[Call]					-> [^self concretizeCall].
 		[CallR]					-> [^self concretizeCallR].
@@ -148,8 +150,4 @@ dispatchConcretize
 		[SignExtend16RR]	-> [^ self concretizeSignExtend16RR].
 		[ZeroExtend8RR]	-> [^ self concretizeZeroExtend8RR].
 		[ZeroExtend16RR]	-> [^ self concretizeZeroExtend16RR].
-		
-		[REP]					-> [^self concretizeREP].
-		[CLD]					-> [^self concretizeCLD].
-		[MOVSB]				-> [^self concretizeMOVSB].
-		[MOVSD]				-> [^self concretizeMOVSD]. }
+	}  otherwise: [^ self dispatchConcretize2].

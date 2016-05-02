@@ -1,6 +1,7 @@
 simulation stack
 liveFloatRegisters
 	| regsSet |
+	regsSet := 0.
 	(simSpillBase max: 0) to: simStackPtr do:
 		[:i|
 		regsSet := regsSet bitOr: (self simStackAt: i) floatRegisterMask].

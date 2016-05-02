@@ -1,5 +1,6 @@
 simulation stack
 ssPushNativeConstantFloat32: aFloat32
+	<var: #aFloat32 type: #float>
 	self ssNativePush: 1.
 	simNativeSpillBase > simNativeStackPtr ifTrue:
 		[simNativeSpillBase := simNativeStackPtr max: 0].

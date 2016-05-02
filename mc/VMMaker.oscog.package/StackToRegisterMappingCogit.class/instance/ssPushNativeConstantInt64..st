@@ -1,5 +1,6 @@
 simulation stack
 ssPushNativeConstantInt64: anInt64
+	<var: #anInt64 type: #sqLong>
 	self ssNativePush: 1.
 	simNativeSpillBase > simNativeStackPtr ifTrue:
 		[simNativeSpillBase := simNativeStackPtr max: 0].

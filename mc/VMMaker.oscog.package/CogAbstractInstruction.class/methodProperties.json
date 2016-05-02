@@ -72,6 +72,7 @@
 		"genLoadCStackPointers" : "eem 5/15/2014 09:46",
 		"genLoadStackPointers" : "eem 5/15/2014 09:45",
 		"genMarshallNArgs:arg:arg:arg:arg:" : "eem 12/18/2015 14:12",
+		"genMarshallNArgs:floatArg:floatArg:floatArg:floatArg:" : "RonieSalgado 5/2/2016 14:25",
 		"genMulR:R:" : "eem 12/16/2015 09:45",
 		"genPushRegisterArgsForAbortMissNumArgs:" : "eem 5/15/2014 09:27",
 		"genPushRegisterArgsForNumArgs:scratchReg:" : "eem 6/1/2015 16:43",

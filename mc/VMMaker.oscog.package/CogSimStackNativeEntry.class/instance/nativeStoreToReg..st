@@ -19,4 +19,6 @@ nativeStoreToReg: reg
 
 		[SSConstantInt32]	-> [cogit MoveCw: constantInt32 R: reg].
 		[SSConstantNativePointer]	-> [cogit MoveCw: constantNativePointer R: reg].
+		[SSConstantFloat32] -> [ cogit MoveCf32: constantFloat32 Rs: reg. ].
+		[SSConstantFloat64] -> [ cogit MoveCf64: constantFloat64 Rd: reg. ].
 	}.
