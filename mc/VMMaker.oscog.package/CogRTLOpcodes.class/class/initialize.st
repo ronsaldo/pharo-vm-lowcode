@@ -143,8 +143,8 @@ initialize
 
 						AndCqRR "Three address ops for RISCs; feel free to add and extend"
 
-						CmpRdRd AddRdRd SubRdRd MulRdRd DivRdRd SqrtRd
-						CmpRsRs AddRsRs SubRsRs MulRsRs DivRsRs SqrtRs
+						CmpRdRd AddRdRd SubRdRd MulRdRd DivRdRd SqrtRd XorRdRd
+						CmpRsRs AddRsRs SubRsRs MulRsRs DivRsRs SqrtRs XorRsRs
 
 						"Conversion"
 						ConvertRRd ConvertRdR

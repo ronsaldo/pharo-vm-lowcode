@@ -4,8 +4,8 @@ lowcodePrimitiveStoreFloat64ToMemory
 	| doubleValue pointer |
 	<var: #doubleValue type: #'double' >
 	<var: #pointer type: #'char*' >
-	doubleValue := self internalPopStackFloat64.
 	pointer := self internalPopStackPointer.
+	doubleValue := self internalPopStackFloat64.
 
 	self floatAtPointer: pointer put: doubleValue.
 

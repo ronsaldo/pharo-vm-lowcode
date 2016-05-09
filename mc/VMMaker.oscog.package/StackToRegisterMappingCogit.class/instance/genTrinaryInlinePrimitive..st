@@ -3,10 +3,10 @@ genTrinaryInlinePrimitive: prim
 	"Lowcode instruction generator dispatch"
 	prim
 		caseOf: {
-			[5]	-> [ ^ self genLowcodeStoreObjectFieldAt ].
-			[6]	-> [ ^ self genLowcodeStoreObjectField ].
-			[7]	-> [ ^ self genLowcodeOopNotEqual ].
-			[8]	-> [ ^ self genLowcodeOopEqual ].
+			[5]	-> [ ^ self genLowcodeOopEqual ].
+			[6]	-> [ ^ self genLowcodeOopNotEqual ].
+			[7]	-> [ ^ self genLowcodeStoreObjectField ].
+			[8]	-> [ ^ self genLowcodeStoreObjectFieldAt ].
 		}
 		otherwise: [ ^ self genOptimizedTrinaryInlinePrimitive: prim ].
 	^ 0

@@ -1,0 +1,12 @@
+inline primitive generated code
+lowcodePrimitiveFloat32Neg
+	"Lowcode instruction generator"
+	| value result |
+	<var: #value type: #'float' >
+	<var: #result type: #'float' >
+	value := self internalPopStackFloat32.
+
+	result := first negated.
+
+	self internalPushFloat32: result.
+

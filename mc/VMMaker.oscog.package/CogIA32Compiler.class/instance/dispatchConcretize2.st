@@ -6,6 +6,8 @@ dispatchConcretize2
 	 bytecode set."
 	<returnTypeC: #void>
 	opcode caseOf: {
+		[XorRsRs]				-> [^self concretizeXorRsRs].
+		[XorRdRd]				-> [^self concretizeXorRdRd].
 		[REP]					-> [^self concretizeREP].
 		[CLD]					-> [^self concretizeCLD].
 		[MOVSB]				-> [^self concretizeMOVSB].

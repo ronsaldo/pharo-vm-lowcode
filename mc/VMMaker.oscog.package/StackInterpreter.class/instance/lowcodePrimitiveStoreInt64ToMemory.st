@@ -4,8 +4,8 @@ lowcodePrimitiveStoreInt64ToMemory
 	| pointer value |
 	<var: #pointer type: #'char*' >
 	<var: #value type: #'sqLong' >
-	value := self internalPopStackInt64.
 	pointer := self internalPopStackPointer.
+	value := self internalPopStackInt64.
 
 	self int64AtPointer: pointer put: value.
 

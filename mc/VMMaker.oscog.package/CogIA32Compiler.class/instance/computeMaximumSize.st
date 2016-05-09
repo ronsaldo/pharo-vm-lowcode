@@ -144,6 +144,7 @@ computeMaximumSize
 		[MulRdRd]					-> [^4].
 		[DivRdRd]					-> [^4].
 		[SqrtRd]					-> [^4].
+		[XorRdRd]					-> [^4].
 						
 		[AddRsRs]				-> [^4].
 		[CmpRsRs]				-> [^3].
@@ -151,6 +152,7 @@ computeMaximumSize
 		[MulRsRs]				-> [^4].
 		[DivRsRs]				-> [^4].
 		[SqrtRs]					-> [^4].
+		[XorRsRs]					-> [^3].
 						
 		"Data Movement"
 		[MoveCqR]		-> [^(operands at: 0) = 0 ifTrue: [2] ifFalse: [5]].

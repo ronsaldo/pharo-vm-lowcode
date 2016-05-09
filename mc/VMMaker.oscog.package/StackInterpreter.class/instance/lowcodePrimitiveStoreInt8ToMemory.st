@@ -4,8 +4,8 @@ lowcodePrimitiveStoreInt8ToMemory
 	| pointer value |
 	<var: #pointer type: #'char*' >
 	<var: #value type: #'sqInt' >
-	value := self internalPopStackInt32.
 	pointer := self internalPopStackPointer.
+	value := self internalPopStackInt32.
 
 	self int8AtPointer: pointer put: value.
 

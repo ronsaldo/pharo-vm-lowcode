@@ -146,6 +146,8 @@
 		"XorCqR",
 		"XorCwR",
 		"XorRR",
+		"XorRdRd",
+		"XorRsRs",
 		"ZeroExtend16RR",
 		"ZeroExtend8RR" ],
 	"commentStamp" : "eem 12/26/2015 14:00",
