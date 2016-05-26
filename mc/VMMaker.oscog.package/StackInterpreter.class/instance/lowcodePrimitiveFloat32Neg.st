@@ -6,7 +6,7 @@ lowcodePrimitiveFloat32Neg
 	<var: #result type: #'float' >
 	value := self internalPopStackFloat32.
 
-	result := first negated.
+	result := value negated.
 
 	self internalPushFloat32: result.
 

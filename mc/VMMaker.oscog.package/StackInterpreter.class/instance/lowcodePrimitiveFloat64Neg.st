@@ -6,7 +6,7 @@ lowcodePrimitiveFloat64Neg
 	<var: #result type: #'double' >
 	value := self internalPopStackFloat64.
 
-	result := first negated.
+	result := value negated.
 
 	self internalPushFloat64: result.
 
