@@ -1,3 +1,3 @@
 bytecode generator support
 frameOffsetOfPreviousNativeStackPointer
-	^ FoxMFReceiver - BytesPerWord
+	^ FoxMFReceiver - (BytesPerWord*2)

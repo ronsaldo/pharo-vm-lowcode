@@ -4,4 +4,4 @@ nativeStackPointerIn: theFP
 	<inline: false>
 	<returnTypeC: #'char*'>
 	<var: #theFP type: #'char *'>
-	^ stackPages pointerAtPointer: theFP + FoxReceiver - (BytesPerWord*3)
+	^ stackPages pointerAtPointer: theFP + FoxReceiver - (BytesPerWord*4)

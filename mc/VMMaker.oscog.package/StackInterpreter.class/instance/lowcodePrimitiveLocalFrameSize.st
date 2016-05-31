@@ -4,6 +4,8 @@ lowcodePrimitiveLocalFrameSize
 	| size |
 	size := extA.
 
+	"Mark the frame"
+	self setFrameHasNativeFrame: localFP.
 	"Store the previous stack pointer"
 	self nativePreviousStackPointerIn: localFP put: nativeStackPointer + 1.
 	"Make the frame pointer"

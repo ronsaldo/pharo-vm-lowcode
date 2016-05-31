@@ -6,6 +6,6 @@ nativeFramePointerIn: theFP put: valueOopPointer
 	<var: #valueOopPointer type: #'char*'>
 	^(self isMachineCodeFrame: theFP)
 		ifTrue:
-			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*2) put: valueOopPointer]
+			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*3) put: valueOopPointer]
 		ifFalse:
-			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*2) put: valueOopPointer]
+			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*3) put: valueOopPointer]

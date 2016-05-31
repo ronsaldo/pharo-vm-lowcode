@@ -1,12 +1,12 @@
 inline primitive generated code
 lowcodePrimitiveFloat64ToOop
 	"Lowcode instruction generator"
-	| object value |
+	| floatValue object |
+	<var: #floatValue type: #'double' >
 	<var: #object type: #'sqInt' >
-	<var: #value type: #'double' >
-	value := self internalPopStackFloat64.
+	floatValue := self internalPopStackFloat64.
 
-	object := self floatObjectOf: value.
+	object := objectMemory floatObjectOf: floatValue.
 
 	self internalPush: object.
 

@@ -6,6 +6,9 @@ genLowcodeLocalFrameSize
 
 	self assert: needsFrame.
 	hasNativeFrame := true.
+	"Mark the stack frame"
+	self annotate: (self MoveCw: (objectMemory splObj: LowcodeContextMark) R: TempReg) objRef: (objectMemory splObj: LowcodeContextMark).
+	self MoveR: TempReg Mw: self frameOffsetOfNativeFrameMark r: FPReg.
 	"Fetch the stack"
 	self MoveAw: coInterpreter nativeStackPointerAddress R: TempReg.
 	self AddCq: 1 R: TempReg.

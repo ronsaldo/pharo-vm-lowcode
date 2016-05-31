@@ -1,6 +1,6 @@
 internal interpreter access
-shadowCallStackPointerIn: theFP
+nativeFrameSignalObjectIn: theFP put: oop
 	"See StackInterpreter class>>initializeFrameIndices"
 	<inline: false>
 	<var: #theFP type: #'char *'>
-	^ stackPages pointerAtPointer: theFP + FoxReceiver - (BytesPerWord*5)
+	^ stackPages longAt: theFP + FoxReceiver - BytesPerWord put: oop

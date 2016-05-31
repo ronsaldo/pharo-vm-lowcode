@@ -6,6 +6,6 @@ shadowCallStackPointerIn: theFP put: valueOopPointer
 	<var: #valueOopPointer type: #'char *'>
 	^(self isMachineCodeFrame: theFP)
 		ifTrue:
-			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*4) put: valueOopPointer]
+			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*5) put: valueOopPointer]
 		ifFalse:
-			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*4) put: valueOopPointer]
+			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*5) put: valueOopPointer]

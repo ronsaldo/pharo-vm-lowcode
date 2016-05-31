@@ -51,7 +51,7 @@
 		"genJumpMutable:scratchReg:" : "cb 12/29/2015 10:20",
 		"genJumpNotCharacterInScratchReg:" : "eem 12/9/2013 18:36",
 		"genJumpNotImmediate:" : "eem 5/29/2015 18:15",
-		"genLcFirstFieldPointer:" : "RonieSalgado 5/1/2016 19:18",
+		"genLcFirstFieldPointer:" : "RonieSalgado 5/31/2016 21:19",
 		"genLcFirstIndexableFieldPointer:" : "RonieSalgado 5/1/2016 19:19",
 		"genLcIsBytes:to:" : "RonieSalgado 5/1/2016 18:50",
 		"genLcIsFloatObject:to:" : "RonieSalgado 5/1/2016 18:51",

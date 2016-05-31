@@ -65,4 +65,8 @@ initializeSpecialObjectIndices
 
 	SelectorUnknownBytecode := 57.
 	SelectorCounterTripped := 58.
-	SelectorSistaTrap := 59
+	SelectorSistaTrap := 59.
+	
+	LowcodeContextMark := 60.
+	LowcodeNativeContextClass := 61.
+	

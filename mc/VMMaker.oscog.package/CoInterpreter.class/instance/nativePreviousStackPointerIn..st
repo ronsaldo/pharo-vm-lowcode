@@ -5,6 +5,6 @@ nativePreviousStackPointerIn: theFP
 	<var: #theFP type: #'char *'>
 	^(self isMachineCodeFrame: theFP)
 		ifTrue:
-			[stackPages pointerAtPointer: theFP + FoxMFReceiver - BytesPerWord]
+			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*2)]
 		ifFalse:
-			[stackPages pointerAtPointer: theFP + FoxIFReceiver - BytesPerWord]
+			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*2)]

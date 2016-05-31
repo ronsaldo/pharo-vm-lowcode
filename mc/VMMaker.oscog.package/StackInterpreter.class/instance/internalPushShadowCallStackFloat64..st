@@ -1,6 +1,6 @@
 internal interpreter access
 internalPushShadowCallStackFloat64: floatValue
-	<var: #singleFloatValue type: #double >
+	<var: #floatValue type: #double >
 	"In the StackInterpreter stacks grow down."
 	shadowCallStackPointer := shadowCallStackPointer - 8.
 

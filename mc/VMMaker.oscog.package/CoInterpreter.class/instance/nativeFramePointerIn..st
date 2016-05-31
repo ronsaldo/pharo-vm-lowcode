@@ -5,6 +5,6 @@ nativeFramePointerIn: theFP
 	<var: #theFP type: #'char *'>
 	^(self isMachineCodeFrame: theFP)
 		ifTrue:
-			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*2) ]
+			[stackPages pointerAtPointer: theFP + FoxMFReceiver - (BytesPerWord*3) ]
 		ifFalse:
-			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*2) ]
+			[stackPages pointerAtPointer: theFP + FoxIFReceiver - (BytesPerWord*3) ]

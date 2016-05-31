@@ -1,10 +1,10 @@
 inline primitive generators generated code
 genLowcodeFloat32ToOop
 	"Lowcode instruction generator"
-	| object value |
+	| singleFloatValue object |
 
-	(value := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:
-		[self ssAllocateRequiredFloatReg: (value := DPFPReg0)].
+	(singleFloatValue := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:
+		[self ssAllocateRequiredFloatReg: (singleFloatValue := DPFPReg0)].
 
 	(object := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:
 		[self ssAllocateRequiredReg:
@@ -13,11 +13,11 @@ genLowcodeFloat32ToOop
 				ifFalse: [ReceiverResultReg])].
 	object = ReceiverResultReg ifTrue:
 		[ optStatus isReceiverResultRegLive: false ].
-	self ssNativeTop nativePopToReg: value.
+	self ssNativeTop nativePopToReg: singleFloatValue.
 	self ssNativePop: 1.
 
 	self ssFlushAll.
-	objectRepresentation genLcFloat32: value toOop: object.
+	objectRepresentation genLcFloat32: singleFloatValue toOop: object.
 
 	^ 0
 
