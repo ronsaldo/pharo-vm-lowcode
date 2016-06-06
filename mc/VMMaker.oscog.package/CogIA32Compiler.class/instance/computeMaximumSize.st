@@ -164,6 +164,15 @@ computeMaximumSize
 		[MoveRAw]		-> [^(operands at: 0) = EAX ifTrue: [5] ifFalse: [6]].
 		[MoveAbR]		-> [^7].
 		[MoveRAb]		-> [^(operands at: 0) = EAX ifTrue: [5] ifFalse: [6]].
+		[MoveRM32r]	-> [^((self isQuick: (operands at: 1))
+									ifTrue: [((operands at: 1) = 0
+											and: [(operands at: 2) ~= EBP])
+												ifTrue: [2]
+												ifFalse: [3]]
+									ifFalse: [6])
+								+ ((operands at: 2) = ESP
+									ifTrue: [1]
+									ifFalse: [0])].
 		[MoveRMwr]	-> [^((self isQuick: (operands at: 1))
 									ifTrue: [((operands at: 1) = 0
 											and: [(operands at: 2) ~= EBP])
@@ -209,6 +218,15 @@ computeMaximumSize
 										+ ((operands at: 1) = ESP
 											ifTrue: [1]
 											ifFalse: [0])].
+		[MoveM32rR]		-> [^((self isQuick: (operands at: 0))
+									ifTrue: [((operands at: 0) = 0
+											and: [(operands at: 1) ~= EBP])
+												ifTrue: [2]
+												ifFalse: [3]]
+									ifFalse: [6])
+								+ ((operands at: 1) = ESP
+									ifTrue: [1]
+									ifFalse: [0])].
 		[MoveMwrR]		-> [^((self isQuick: (operands at: 0))
 									ifTrue: [((operands at: 0) = 0
 											and: [(operands at: 1) ~= EBP])
