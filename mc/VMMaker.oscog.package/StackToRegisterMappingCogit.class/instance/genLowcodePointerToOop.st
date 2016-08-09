@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePointerToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer pointerClassLiteral |
 	pointerClassLiteral := self getLiteral: extA.
 

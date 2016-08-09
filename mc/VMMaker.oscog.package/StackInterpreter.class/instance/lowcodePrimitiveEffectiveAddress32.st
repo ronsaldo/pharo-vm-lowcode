@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveEffectiveAddress32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result offset base scale index |
 	<var: #result type: #'char*' >
 	<var: #offset type: #'sqInt' >

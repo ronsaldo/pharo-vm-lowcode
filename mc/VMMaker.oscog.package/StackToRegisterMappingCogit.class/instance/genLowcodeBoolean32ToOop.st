@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeBoolean32ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value inst cont object trueJump |
 
 	(value := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

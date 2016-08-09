@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveUnlockVM
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	self abort.
 

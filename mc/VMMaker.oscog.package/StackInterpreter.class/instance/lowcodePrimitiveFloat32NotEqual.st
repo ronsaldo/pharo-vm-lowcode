@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveFloat32NotEqual
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second value first |
 	<var: #second type: #'float' >
 	<var: #value type: #'sqInt' >

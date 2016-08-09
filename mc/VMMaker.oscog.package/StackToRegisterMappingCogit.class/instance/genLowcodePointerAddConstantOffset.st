@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePointerAddConstantOffset
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| base offset |
 	offset := extA.
 

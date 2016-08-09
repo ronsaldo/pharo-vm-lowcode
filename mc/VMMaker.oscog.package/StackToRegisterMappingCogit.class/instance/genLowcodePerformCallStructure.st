@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePerformCallStructure
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	"Push the result space"
 	self ssNativeTop nativeStackPopToReg: TempReg.

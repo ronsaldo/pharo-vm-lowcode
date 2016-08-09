@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveLoadLocalUInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value baseOffset |
 	<var: #value type: #'sqInt' >
 	baseOffset := extA.

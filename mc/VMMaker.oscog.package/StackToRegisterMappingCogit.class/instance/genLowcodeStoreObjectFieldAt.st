@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeStoreObjectFieldAt
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| fieldIndex object value |
 
 	(value := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

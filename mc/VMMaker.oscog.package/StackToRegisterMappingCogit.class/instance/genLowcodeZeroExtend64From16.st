@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeZeroExtend64From16
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| valueHigh value valueLow |
 	BytesPerWord = 4 ifTrue: [
 

@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeCallArgumentFloat32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	self ssNativeTop nativeStackPopToReg: DPFPReg0.
 	self ssNativePop: 1.

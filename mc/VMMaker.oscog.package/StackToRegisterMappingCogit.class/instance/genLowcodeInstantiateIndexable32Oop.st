@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeInstantiateIndexable32Oop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| indexableSize object classOop |
 
 	(indexableSize := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

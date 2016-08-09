@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeIsIndexable
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object value |
 
 	(object := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

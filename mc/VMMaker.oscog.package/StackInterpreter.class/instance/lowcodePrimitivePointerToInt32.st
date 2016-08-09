@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePointerToInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer result |
 	<var: #pointer type: #'char*' >
 	<var: #result type: #'sqInt' >

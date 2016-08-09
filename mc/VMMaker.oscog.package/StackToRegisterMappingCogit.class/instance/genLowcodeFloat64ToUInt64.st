@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeFloat64ToUInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| floatValue int64ResultLow int64Result int64ResultHigh |
 
 	(floatValue := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:

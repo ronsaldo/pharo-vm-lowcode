@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePerformCallPointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result function |
 	<var: #result type: #'char*' >
 	function := extA.

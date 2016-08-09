@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveArithmeticRightShift64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value shiftAmount result |
 	<var: #value type: #'sqLong' >
 	<var: #shiftAmount type: #'sqLong' >

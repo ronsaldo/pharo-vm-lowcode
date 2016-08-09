@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveFloat64ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| floatValue object |
 	<var: #floatValue type: #'double' >
 	<var: #object type: #'sqInt' >

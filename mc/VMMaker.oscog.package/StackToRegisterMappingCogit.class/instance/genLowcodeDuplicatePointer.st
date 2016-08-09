@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeDuplicatePointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| dup2 pointerValue |
 
 	(pointerValue := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

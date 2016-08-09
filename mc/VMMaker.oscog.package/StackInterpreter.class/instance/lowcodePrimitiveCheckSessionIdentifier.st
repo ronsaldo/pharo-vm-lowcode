@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveCheckSessionIdentifier
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| expectedSession value |
 	<var: #value type: #'sqInt' >
 	expectedSession := extA.

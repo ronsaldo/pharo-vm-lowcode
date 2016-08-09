@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePushNullPointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result |
 	<var: #result type: #'char*' >
 

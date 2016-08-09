@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveStoreInt16ToMemory
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer value |
 	<var: #pointer type: #'char*' >
 	<var: #value type: #'sqInt' >

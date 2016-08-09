@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveZeroExtend64From8
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value result |
 	<var: #value type: #'sqLong' >
 	<var: #result type: #'sqLong' >

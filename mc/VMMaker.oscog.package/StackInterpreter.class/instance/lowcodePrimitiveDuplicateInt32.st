@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveDuplicateInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value dup1 dup2 |
 	<var: #value type: #'sqInt' >
 	<var: #dup1 type: #'sqInt' >

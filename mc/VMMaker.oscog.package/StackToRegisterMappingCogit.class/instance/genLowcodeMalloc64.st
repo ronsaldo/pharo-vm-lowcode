@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeMalloc64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| sizeHigh size sizeLow pointer |
 	BytesPerWord = 4 ifTrue: [
 

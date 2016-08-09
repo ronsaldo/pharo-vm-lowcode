@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePushZeroFloat32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	self ssPushNativeConstantFloat32: 0.0.
 

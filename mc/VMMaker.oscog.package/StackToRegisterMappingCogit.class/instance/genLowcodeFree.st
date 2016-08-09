@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeFree
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer |
 
 	(pointer := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

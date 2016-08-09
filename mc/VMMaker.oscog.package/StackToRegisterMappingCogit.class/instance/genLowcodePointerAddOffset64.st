@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePointerAddOffset64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| offsetHigh base offset offsetLow |
 	BytesPerWord = 4 ifTrue: [
 

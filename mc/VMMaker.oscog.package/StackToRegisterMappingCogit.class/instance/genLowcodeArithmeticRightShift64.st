@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeArithmeticRightShift64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value result shiftAmount shiftAmountHigh resultLow valueLow resultHigh shiftAmountLow valueHigh |
 
 	(shiftAmount := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

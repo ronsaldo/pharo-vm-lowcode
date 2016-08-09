@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveFloat32ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| singleFloatValue object |
 	<var: #singleFloatValue type: #'float' >
 	<var: #object type: #'sqInt' >

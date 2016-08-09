@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePopPointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointerValue |
 
 	(pointerValue := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

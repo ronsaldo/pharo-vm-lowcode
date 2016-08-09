@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveStorePointerToMemory
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| memoryPointer pointerValue |
 	<var: #memoryPointer type: #'char*' >
 	<var: #pointerValue type: #'char*' >

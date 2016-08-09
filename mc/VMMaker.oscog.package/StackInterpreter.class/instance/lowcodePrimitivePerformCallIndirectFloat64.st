@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePerformCallIndirectFloat64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result function |
 	<var: #result type: #'double' >
 	<var: #function type: #'char*' >

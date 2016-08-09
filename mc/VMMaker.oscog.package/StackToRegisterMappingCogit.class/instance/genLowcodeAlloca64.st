@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeAlloca64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| sizeHigh size sizeLow |
 	BytesPerWord = 4 ifTrue: [
 

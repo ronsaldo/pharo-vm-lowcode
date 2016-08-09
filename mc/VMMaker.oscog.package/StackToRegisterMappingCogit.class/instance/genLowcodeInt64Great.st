@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeInt64Great
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| secondLow firstLow secondHigh value first second firstHigh |
 
 	(second := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

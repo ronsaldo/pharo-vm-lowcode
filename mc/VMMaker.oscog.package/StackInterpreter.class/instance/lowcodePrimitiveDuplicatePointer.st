@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveDuplicatePointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| dup2 dup1 pointerValue |
 	<var: #dup2 type: #'char*' >
 	<var: #dup1 type: #'char*' >

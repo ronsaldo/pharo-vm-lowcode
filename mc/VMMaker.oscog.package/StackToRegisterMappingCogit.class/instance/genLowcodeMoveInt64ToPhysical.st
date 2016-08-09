@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeMoveInt64ToPhysical
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| registerID valueHigh value valueLow |
 	registerID := extA.
 

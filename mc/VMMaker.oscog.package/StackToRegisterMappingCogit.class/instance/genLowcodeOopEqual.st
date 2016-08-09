@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeOopEqual
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value contJump falseJump first second |
 
 	(second := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

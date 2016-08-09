@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeCompareAndSwap32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| newValue check oldValue value |
 
 	(newValue := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeDuplicateInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value dup2Low dup2 valueLow dup2High valueHigh |
 	BytesPerWord = 4 ifTrue: [
 

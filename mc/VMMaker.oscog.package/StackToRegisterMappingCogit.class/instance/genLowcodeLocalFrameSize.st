@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeLocalFrameSize
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| size |
 	size := extA.
 

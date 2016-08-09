@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeLoadLocalAddress
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| baseOffset pointer |
 	baseOffset := extA.
 

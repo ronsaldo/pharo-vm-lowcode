@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveCallInstruction
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| function |
 	function := extA.
 

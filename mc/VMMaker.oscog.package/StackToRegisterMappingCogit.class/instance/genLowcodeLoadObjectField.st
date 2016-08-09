@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeLoadObjectField
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| fieldIndex object |
 	fieldIndex := extA.
 

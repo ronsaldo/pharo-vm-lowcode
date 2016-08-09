@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeDuplicateFloat32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value dup2 |
 
 	(value := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:

@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePushOne32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	self ssPushNativeConstantInt32: 1.
 

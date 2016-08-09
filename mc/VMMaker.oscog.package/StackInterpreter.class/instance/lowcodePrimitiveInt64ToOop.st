@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveInt64ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object value |
 	<var: #object type: #'sqInt' >
 	<var: #value type: #'sqLong' >

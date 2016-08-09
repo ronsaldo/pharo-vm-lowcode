@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePerformCallInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	self callSwitchToCStack.
 	self MoveCw: extA R: TempReg.

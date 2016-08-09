@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveEndCall
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	"Restore the shadow stack pointer"
 	shadowCallStackPointer := (self shadowCallStackPointerIn: localFP) - 1.

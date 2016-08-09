@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeCheckSessionIdentifier
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| expectedSession |
 	expectedSession := extA.
 

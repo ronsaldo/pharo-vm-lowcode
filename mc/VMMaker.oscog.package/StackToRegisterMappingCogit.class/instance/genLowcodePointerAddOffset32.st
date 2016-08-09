@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePointerAddOffset32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| base offset |
 
 	(offset := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

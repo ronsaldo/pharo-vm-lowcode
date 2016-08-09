@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveStoreLocalInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	<var: #valueInt64 type: #'sqLong'>
 	|valueInt64|

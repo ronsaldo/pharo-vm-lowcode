@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveFirstIndexableFieldPointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object pointer |
 	<var: #object type: #'sqInt' >
 	<var: #pointer type: #'char*' >

@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeAlloca32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| size |
 
 	(size := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

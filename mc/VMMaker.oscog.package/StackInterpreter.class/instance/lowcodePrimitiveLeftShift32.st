@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveLeftShift32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value shiftAmount result |
 	<var: #value type: #'sqInt' >
 	<var: #shiftAmount type: #'sqInt' >

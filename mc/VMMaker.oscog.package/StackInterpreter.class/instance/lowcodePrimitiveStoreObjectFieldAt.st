@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveStoreObjectFieldAt
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| fieldIndex object value |
 	<var: #fieldIndex type: #'sqInt' >
 	<var: #object type: #'sqInt' >

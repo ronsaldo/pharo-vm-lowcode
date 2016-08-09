@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePerformCallIndirectStructure
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| resultPointer result function structureSize |
 	<var: #resultPointer type: #'char*' >
 	<var: #result type: #'char*' >

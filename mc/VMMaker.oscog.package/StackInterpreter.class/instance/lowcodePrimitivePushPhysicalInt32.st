@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePushPhysicalInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| registerID value |
 	<var: #value type: #'sqInt' >
 	registerID := extA.

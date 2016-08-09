@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeFloat64Less
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value contJump falseJump first second |
 
 	(second := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:

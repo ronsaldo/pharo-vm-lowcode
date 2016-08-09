@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeBoolean64ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value inst trueJump2 cont valueLow object trueJump valueHigh |
 	BytesPerWord = 4 ifTrue: [
 

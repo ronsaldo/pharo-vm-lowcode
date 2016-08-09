@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePerformCallIndirectPointer
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result function |
 	<var: #result type: #'char*' >
 	<var: #function type: #'char*' >

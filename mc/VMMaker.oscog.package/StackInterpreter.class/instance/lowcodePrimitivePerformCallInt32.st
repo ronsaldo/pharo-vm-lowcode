@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePerformCallInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result function |
 	<var: #result type: #'sqInt' >
 	function := extA.

@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePushZeroFloat64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result |
 	<var: #result type: #'double' >
 

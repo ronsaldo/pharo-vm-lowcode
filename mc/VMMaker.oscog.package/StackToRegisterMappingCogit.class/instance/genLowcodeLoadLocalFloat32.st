@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeLoadLocalFloat32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| baseOffset floatValue |
 	baseOffset := extA.
 

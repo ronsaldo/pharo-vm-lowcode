@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeLoadLocalUInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| baseOffset value |
 	baseOffset := extA.
 

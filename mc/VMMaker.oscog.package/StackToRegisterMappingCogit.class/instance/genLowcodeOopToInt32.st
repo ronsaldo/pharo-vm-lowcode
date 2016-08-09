@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeOopToInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object |
 
 	(object := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

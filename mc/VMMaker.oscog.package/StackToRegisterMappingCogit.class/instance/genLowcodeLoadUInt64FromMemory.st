@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeLoadUInt64FromMemory
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| valueHigh pointer value valueLow |
 	BytesPerWord = 4 ifTrue: [
 

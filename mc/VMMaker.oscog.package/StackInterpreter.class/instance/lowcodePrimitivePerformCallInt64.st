@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePerformCallInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result function |
 	<var: #result type: #'sqLong' >
 	function := extA.

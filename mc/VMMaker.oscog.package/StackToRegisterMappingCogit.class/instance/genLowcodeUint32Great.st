@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeUint32Great
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second falseJump contJump first |
 
 	(second := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveInt64Less
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second value first |
 	<var: #second type: #'sqLong' >
 	<var: #value type: #'sqInt' >

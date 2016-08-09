@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveIsWordsOrBytes
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object value |
 	<var: #object type: #'sqInt' >
 	<var: #value type: #'sqInt' >

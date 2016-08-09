@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeTruncate64To8
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| valueHigh value valueLow result |
 	BytesPerWord = 4 ifTrue: [
 

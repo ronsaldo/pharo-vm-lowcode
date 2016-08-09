@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveMemcpyFixed
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| source size dest |
 	<var: #source type: #'char*' >
 	<var: #dest type: #'char*' >

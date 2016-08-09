@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeInstantiateIndexableOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| indexableSize object classOop |
 	indexableSize := extA.
 

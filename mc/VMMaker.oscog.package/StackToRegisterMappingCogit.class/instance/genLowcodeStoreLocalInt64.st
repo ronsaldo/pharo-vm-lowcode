@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeStoreLocalInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| valueHigh value valueLow baseOffset |
 	baseOffset := extA.
 	BytesPerWord = 4 ifTrue: [

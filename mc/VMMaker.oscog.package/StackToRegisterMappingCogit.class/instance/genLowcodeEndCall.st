@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeEndCall
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	self endHighLevelCallWithCleanup.
 

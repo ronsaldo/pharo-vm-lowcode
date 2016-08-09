@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeStorePointerToMemory
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| memoryPointer pointerValue |
 
 	(memoryPointer := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

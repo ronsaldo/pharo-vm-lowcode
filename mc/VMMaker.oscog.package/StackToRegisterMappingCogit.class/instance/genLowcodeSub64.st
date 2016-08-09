@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeSub64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| secondLow firstLow secondHigh first second firstHigh |
 	BytesPerWord = 4 ifTrue: [
 

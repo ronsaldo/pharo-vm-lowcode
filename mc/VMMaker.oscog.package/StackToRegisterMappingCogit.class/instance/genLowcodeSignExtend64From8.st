@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeSignExtend64From8
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value result resultLow resultHigh isNegative valueLow cont valueHigh |
 	BytesPerWord = 4 ifTrue: [
 

@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeMemcpy64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| source sizeLow sizeHigh dest size |
 
 	(size := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

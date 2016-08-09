@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeEffectiveAddress32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| offset base index scale |
 
 	(offset := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

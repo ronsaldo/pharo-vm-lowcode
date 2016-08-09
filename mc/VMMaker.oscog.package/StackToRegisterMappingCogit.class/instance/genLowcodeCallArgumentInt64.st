@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeCallArgumentInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 
 	BytesPerWord = 4 ifTrue: [
 	self ssNativeTop nativeStackPopToReg: TempReg secondReg: ReceiverResultReg.

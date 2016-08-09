@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePushOne32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result |
 	<var: #result type: #'sqInt' >
 

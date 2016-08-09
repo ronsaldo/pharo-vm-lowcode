@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeMalloc32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer size |
 
 	(size := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

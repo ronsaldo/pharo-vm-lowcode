@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePushPhysicalInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| registerID |
 	registerID := extA.
 

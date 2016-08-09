@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePushConstantUInt32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| result constant |
 	<var: #result type: #'sqInt' >
 	constant := extA.

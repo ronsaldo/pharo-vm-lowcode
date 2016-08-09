@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveCompareAndSwap32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| newValue check oldValue value |
 	<var: #newValue type: #'sqInt' >
 	<var: #check type: #'char*' >

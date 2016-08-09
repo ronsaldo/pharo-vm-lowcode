@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveInt32LessEqual
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second value first |
 	<var: #second type: #'sqInt' >
 	<var: #value type: #'sqInt' >

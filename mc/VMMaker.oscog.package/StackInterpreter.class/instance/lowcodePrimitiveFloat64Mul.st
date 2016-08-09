@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveFloat64Mul
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second result first |
 	<var: #second type: #'double' >
 	<var: #result type: #'double' >

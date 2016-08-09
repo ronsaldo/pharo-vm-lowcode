@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeUint64ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| valueHigh object value valueLow |
 	BytesPerWord = 4 ifTrue: [
 

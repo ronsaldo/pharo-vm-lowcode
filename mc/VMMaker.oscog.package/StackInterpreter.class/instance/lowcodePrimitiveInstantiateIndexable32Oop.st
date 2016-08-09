@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveInstantiateIndexable32Oop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| indexableSize object classOop |
 	<var: #indexableSize type: #'sqInt' >
 	<var: #object type: #'sqInt' >

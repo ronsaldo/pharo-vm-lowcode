@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeStoreFloat32ToMemory
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| floatValue pointer |
 
 	(pointer := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeOopToPointerReinterpret
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object pointer |
 
 	(object := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

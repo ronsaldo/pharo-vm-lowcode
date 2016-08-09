@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeInt64Equal
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| falseLabel first contJump falseJump secondLow secondHigh second falseJump2 firstHigh firstLow |
 	BytesPerWord = 4 ifTrue: [
 

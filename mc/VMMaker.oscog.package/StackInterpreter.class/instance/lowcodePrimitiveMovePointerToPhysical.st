@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveMovePointerToPhysical
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| registerID pointerValue |
 	<var: #pointerValue type: #'char*' >
 	registerID := extA.

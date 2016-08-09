@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveAlloca32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer size |
 	<var: #pointer type: #'char*' >
 	<var: #size type: #'sqInt' >

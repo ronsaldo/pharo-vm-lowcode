@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePointerAddConstantOffset
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| base offset result |
 	<var: #base type: #'char*' >
 	<var: #result type: #'char*' >

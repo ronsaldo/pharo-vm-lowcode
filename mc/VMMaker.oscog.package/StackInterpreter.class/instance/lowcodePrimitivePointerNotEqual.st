@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePointerNotEqual
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second value first |
 	<var: #second type: #'char*' >
 	<var: #value type: #'sqInt' >

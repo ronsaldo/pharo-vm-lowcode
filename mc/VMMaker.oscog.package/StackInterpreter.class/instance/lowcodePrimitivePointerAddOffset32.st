@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePointerAddOffset32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| base offset result |
 	<var: #base type: #'char*' >
 	<var: #offset type: #'sqInt' >

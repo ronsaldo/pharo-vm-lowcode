@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveMoveInt64ToPhysical
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| registerID value |
 	<var: #value type: #'sqLong' >
 	registerID := extA.

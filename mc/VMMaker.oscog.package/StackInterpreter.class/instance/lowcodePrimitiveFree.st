@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveFree
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| pointer |
 	<var: #pointer type: #'char*' >
 	pointer := self internalPopStackPointer.

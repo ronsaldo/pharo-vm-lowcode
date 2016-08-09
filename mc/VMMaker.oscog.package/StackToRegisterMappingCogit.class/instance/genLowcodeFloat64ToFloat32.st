@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeFloat64ToFloat32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| floatValue |
 
 	(floatValue := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:

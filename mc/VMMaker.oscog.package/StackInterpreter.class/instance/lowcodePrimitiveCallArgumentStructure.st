@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveCallArgumentStructure
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| structurePointer structureSize |
 	<var: #structurePointer type: #'char*' >
 	structureSize := extA.

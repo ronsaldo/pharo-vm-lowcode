@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeFloat32ToOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| singleFloatValue object |
 
 	(singleFloatValue := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:

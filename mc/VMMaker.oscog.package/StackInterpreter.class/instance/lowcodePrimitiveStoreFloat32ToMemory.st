@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveStoreFloat32ToMemory
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| floatValue pointer |
 	<var: #floatValue type: #'float' >
 	<var: #pointer type: #'char*' >

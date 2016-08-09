@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitivePlaftormCode
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| code |
 	<var: #code type: #'sqInt' >
 

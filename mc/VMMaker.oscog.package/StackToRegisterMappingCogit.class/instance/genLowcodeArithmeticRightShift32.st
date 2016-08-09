@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeArithmeticRightShift32
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value shiftAmount |
 
 	(shiftAmount := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

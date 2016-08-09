@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeStoreLocalFloat64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value baseOffset |
 	baseOffset := extA.
 

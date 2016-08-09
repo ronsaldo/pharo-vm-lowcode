@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeTruncate32To16
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| value |
 
 	(value := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:

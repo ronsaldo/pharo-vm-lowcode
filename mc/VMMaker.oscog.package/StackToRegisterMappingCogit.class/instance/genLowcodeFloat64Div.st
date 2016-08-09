@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeFloat64Div
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| second first |
 
 	(second := backEnd availableFloatRegisterOrNoneFor: self liveFloatRegisters) = NoReg ifTrue:

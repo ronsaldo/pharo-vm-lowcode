@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodePushConstantUInt64
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| constant |
 	constant := extA.
 

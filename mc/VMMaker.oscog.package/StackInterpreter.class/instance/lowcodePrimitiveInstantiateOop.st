@@ -1,6 +1,6 @@
 inline primitive generated code
 lowcodePrimitiveInstantiateOop
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| object classOop |
 	<var: #object type: #'sqInt' >
 	<var: #classOop type: #'sqInt' >

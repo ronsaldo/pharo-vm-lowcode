@@ -1,6 +1,6 @@
 inline primitive generators generated code
 genLowcodeBeginCall
-	"Lowcode instruction generator"
+	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| alignment |
 	alignment := extA.
 
