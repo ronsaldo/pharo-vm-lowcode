@@ -5,9 +5,7 @@ lowcodePrimitivePerformCallPointer
 	<var: #result type: #'char*' >
 	function := extA.
 
-	"self externalizeIPandSP.
-	self LowcodeInterpreterCall: function PointerResult: result.
-	self internalizeIPandSP."
+	result := self lowcodeCalloutPointerResult: (self cCoerce: function to: #'char*').
 
 	self internalPushPointer: result.
 	extA := 0.

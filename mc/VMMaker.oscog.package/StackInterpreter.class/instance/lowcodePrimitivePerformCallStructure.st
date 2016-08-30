@@ -8,10 +8,8 @@ lowcodePrimitivePerformCallStructure
 	structureSize := extB.
 	result := self internalPopStackPointer.
 
-	"self LowcodeInterpreterCallArgumentPointer: result.
-	self externalizeIPandSP.
-	self LowcodeInterpreterCall: function StructureResult: resultPointer Size: structureSize.
-	self internalizeIPandSP."
+	self internalPushShadowCallStackPointer: result.
+	resultPointer := self lowcodeCalloutPointerResult: (self cCoerce: function to: #'char*').
 
 	self internalPushPointer: resultPointer.
 	extA := 0.
