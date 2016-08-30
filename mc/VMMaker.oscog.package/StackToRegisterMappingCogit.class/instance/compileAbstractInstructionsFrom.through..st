@@ -35,7 +35,7 @@ compileAbstractInstructionsFrom: start through: end
 				ifFalse:
 					[self perform: descriptor generator].
 	 descriptor isExtension ifFalse: "extended bytecodes must consume their extensions"
-		[self assert: (extA = 0 and: [extB = 0])].
+		[self assert: (extA = 0 and: [extB = 0 and: [extBFirstZero not]])].
 	 self traceDescriptor: descriptor; traceSimStack.
 	 (fixup targetInstruction asUnsignedInteger between: 1 and: 2) ifTrue:
 		["There is a fixup for this bytecode.  It must point to the first generated

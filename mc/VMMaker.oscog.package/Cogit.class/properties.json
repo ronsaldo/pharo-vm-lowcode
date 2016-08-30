@@ -177,6 +177,7 @@
 		"ceUnlockVMOwner",
 		"extA",
 		"extB",
+		"extBFirstZero",
 		"tempOop",
 		"numIRCs",
 		"indexOfIRC",

@@ -14,7 +14,7 @@ compileAbstractInstructionsFrom: start through: end
 	 nextOpcodeIndex := opcodeIndex.
 	 result := self perform: descriptor generator.
 	 descriptor isExtension ifFalse: "extended bytecodes must consume their extensions"
-		[self assert: (extA = 0 and: [extB = 0])].
+		[self assert: (extA = 0 and: [extB = 0 and: [extBFirstZero not]])].
 	 fixup := self fixupAt: bytecodePC - initialPC.
 	 fixup targetInstruction ~= 0 ifTrue:
 		["There is a fixup for this bytecode.  It must point to the first generated

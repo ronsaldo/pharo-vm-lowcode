@@ -64,6 +64,7 @@
 		"localAbsentReceiverOrZero",
 		"extA",
 		"extB",
+		"extBFirstZero",
 		"primitiveFunctionPointer",
 		"methodCache",
 		"nsMethodCache",

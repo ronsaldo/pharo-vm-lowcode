@@ -2,7 +2,7 @@ inline primitive generators generated code
 genLowcodePointerAddConstantOffset
 	<option: #LowcodeVM>	"Lowcode instruction generator"
 	| base offset |
-	offset := extA.
+	offset := extB.
 
 	(base := backEnd availableRegisterOrNoneFor: self liveRegisters) = NoReg ifTrue:
 		[self ssAllocateRequiredReg:
@@ -17,6 +17,6 @@ genLowcodePointerAddConstantOffset
 	self AddCq: offset R: base.
 	self ssPushNativeRegister: base.
 
-	extA := 0.
+	extB := 0.
 	^ 0
 
